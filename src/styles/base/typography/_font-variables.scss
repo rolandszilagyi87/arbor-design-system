@@ -1,0 +1,43 @@
+/*--- LINE-HEIGHT ---*/
+$font-line-height-lg: 3;
+$font-line-height-md: 2;
+$font-line-height-sm: 1;
+
+/*--- FONT-WEIGHT ---*/
+$font-weight-lg: 800;
+$font-weight-md: 600;
+$font-weight-sm: 300;
+
+/*--- FONT-STYLES ---*/
+$font-styles: (
+  title: (
+    sm: (font-family: $font-primary, font-size: 32pt, font-weight: $font-weight-sm, line-height: $font-line-height-sm),
+    md: (font-family: $font-primary, font-size: 33pt, font-weight: $font-weight-md, line-height: $font-line-height-md),
+    lg: (font-family: $font-primary, font-size: 34pt, font-weight: $font-weight-lg, line-height: $font-line-height-lg),
+  ),
+  subtitle1: (
+    sm: (font-family: $font-primary, font-size: 26pt, font-weight: $font-weight-sm, line-height: $font-line-height-sm),
+    md: (font-family: $font-primary, font-size: 27pt, font-weight: $font-weight-md, line-height: $font-line-height-md),
+    lg: (font-family: $font-primary, font-size: 28pt, font-weight: $font-weight-lg, line-height: $font-line-height-lg),
+  ),
+  subtitle2: (
+    sm: (font-family: $font-primary, font-size: 20pt, font-weight: $font-weight-sm, line-height: $font-line-height-sm),
+    md: (font-family: $font-primary, font-size: 21pt, font-weight: $font-weight-md, line-height: $font-line-height-md),
+    lg: (font-family: $font-primary, font-size: 22pt, font-weight: $font-weight-lg, line-height: $font-line-height-lg),
+  ),
+  subtitle3: (
+    sm: (font-family: $font-primary, font-size: 18pt, font-weight: $font-weight-sm, line-height: $font-line-height-sm),
+    md: (font-family: $font-primary, font-size: 19pt, font-weight: $font-weight-md, line-height: $font-line-height-md),
+    lg: (font-family: $font-primary, font-size: 20pt, font-weight: $font-weight-lg, line-height: $font-line-height-lg),
+  ),
+  subtitle4: (
+    sm: (font-family: $font-primary, font-size: 14pt, font-weight: $font-weight-sm, line-height: $font-line-height-sm),
+    md: (font-family: $font-primary, font-size: 15pt, font-weight: $font-weight-md, line-height: $font-line-height-md),
+    lg: (font-family: $font-primary, font-size: 16pt, font-weight: $font-weight-lg, line-height: $font-line-height-lg),
+  ),
+  body: (
+    sm: (font-family: $font-primary, font-size: 15pt, font-weight: $font-weight-sm, line-height: $font-line-height-sm),
+    md: (font-family: $font-primary, font-size: 16pt, font-weight: $font-weight-md, line-height: $font-line-height-md),
+    lg: (font-family: $font-primary, font-size: 17pt, font-weight: $font-weight-lg, line-height: $font-line-height-lg),
+  )
+);
