@@ -48,43 +48,64 @@ button, a, svg {
 /*--- FONT-WEIGHT ---*/
 /*--- FONT-STYLES ---*/
 h1 {
-  font-size: 33pt;
-  line-height: 2;
+  font-size: 3.125rem;
+  line-height: 1;
   font-weight: 600;
   font-family: "NewYork";
 }
 
 h2 {
-  font-size: 27pt;
-  line-height: 2;
+  font-size: 2.25rem;
+  line-height: 1;
   font-weight: 600;
   font-family: "NewYork";
 }
 
 h3 {
-  font-size: 21pt;
-  line-height: 2;
+  font-size: 1.75rem;
+  line-height: 1;
   font-weight: 600;
   font-family: "NewYork";
 }
 
 h4 {
-  font-size: 19pt;
-  line-height: 2;
-  font-weight: 600;
-  font-family: "NewYork";
-}
-
-h5 {
-  font-size: 15pt;
-  line-height: 2;
+  font-size: 1.25rem;
+  line-height: 1;
   font-weight: 600;
   font-family: "NewYork";
 }
 
 p {
-  font-size: 16pt;
-  line-height: 2;
+  font-size: 1.125rem;
+  line-height: 1;
   font-weight: 600;
   font-family: "NewYork";
+}
+
+.small {
+  font-size: 1rem;
+  line-height: 1;
+  font-weight: 600;
+  font-family: "NewYork";
+}
+
+.caption {
+  font-size: 1.125rem;
+  line-height: 1;
+  font-weight: 600;
+  font-family: "NewYork";
+}
+
+.link {
+  font-size: 1.125rem;
+  line-height: 1;
+  font-weight: 600;
+  font-family: "NewYork";
+}
+
+.blockquote {
+  font-size: 1.25rem;
+  line-height: 1;
+  font-weight: 600;
+  font-family: "SFPro";
 }/*# sourceMappingURL=main.css.map */
