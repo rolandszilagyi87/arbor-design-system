@@ -44,7 +44,11 @@ p {
 }
 
 button {
-  background-color: $indigo-60;
-  padding: $space-inset-sm;
+  background-color: $blue-60;
+  padding: $space-inset-squish-md;
   color: white;
+}
+
+button:hover {
+  background-color: $blue-80;
 }

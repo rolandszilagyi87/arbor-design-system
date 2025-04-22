@@ -36,6 +36,9 @@ button, a, svg {
   text-decoration: none;
 }
 
+/*--- PRIMARY COLORS ---*/
+/*--- SECONDARY COLORS ---*/
+/*--- CONTRAST CHECKER ---*/
 /*--- FONT-FAMILY ---*/
 /*--- FONT-FACE ---*/
 @font-face {
@@ -49,9 +52,6 @@ button, a, svg {
 /*--- FONT-WEIGHT ---*/
 /*--- LINE-HEIGHT ---*/
 /*--- FONT-STYLES ---*/
-/*--- PRIMARY COLORS ---*/
-/*--- SECONDARY COLORS ---*/
-/*--- CONTRAST CHECKER ---*/
 h1 {
   font-family: "NewYork";
   font-size: 3.125rem;
@@ -125,7 +125,11 @@ p {
 }
 
 button {
-  background-color: #6366f1;
-  padding: 8px 8px 8px 8px;
+  background-color: #1a75ff;
+  padding: 8px 16px;
   color: white;
+}
+
+button:hover {
+  background-color: #80b3ff;
 }/*# sourceMappingURL=main.css.map */
