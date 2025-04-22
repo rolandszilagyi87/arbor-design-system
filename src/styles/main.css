@@ -36,6 +36,8 @@ button, a, svg {
   text-decoration: none;
 }
 
+/*--- FONT-FAMILY ---*/
+/*--- FONT-FACE ---*/
 @font-face {
   src: url("../assets/fonts/font_NewYork/NewYork.ttf");
   font-family: "NewYork";
@@ -44,68 +46,86 @@ button, a, svg {
   src: url("../assets/fonts/font_SFPro/SF-Pro.ttf");
   font-family: "SFPro";
 }
-/*--- LINE-HEIGHT ---*/
 /*--- FONT-WEIGHT ---*/
+/*--- LINE-HEIGHT ---*/
 /*--- FONT-STYLES ---*/
+/*--- PRIMARY COLORS ---*/
+/*--- SECONDARY COLORS ---*/
+/*--- CONTRAST CHECKER ---*/
 h1 {
-  font-size: 3.125rem;
-  line-height: 1;
-  font-weight: 600;
   font-family: "NewYork";
+  font-size: 3.125rem;
+  font-weight: 500;
+  line-height: 1;
+  padding: 16px 16px 16px 16px;
+  outline: 2px solid red;
 }
 
 h2 {
-  font-size: 2.25rem;
-  line-height: 1;
-  font-weight: 600;
   font-family: "NewYork";
+  font-size: 2.25rem;
+  font-weight: 500;
+  line-height: 1;
+  padding: 8px 8px 8px 8px;
+  outline: 2px solid green;
 }
 
 h3 {
-  font-size: 1.75rem;
-  line-height: 1;
-  font-weight: 600;
   font-family: "NewYork";
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 1;
+  padding: 24px 16px;
+  outline: 2px solid blue;
 }
 
 h4 {
-  font-size: 1.25rem;
-  line-height: 1;
-  font-weight: 600;
   font-family: "NewYork";
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1;
+  padding: 0 0 32px 0;
+  outline: 2px solid red;
 }
 
 p {
-  font-size: 1.125rem;
-  line-height: 1;
-  font-weight: 600;
   font-family: "NewYork";
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1;
+  padding: 0 16px 0 0;
 }
 
 .small {
-  font-size: 1rem;
-  line-height: 1;
-  font-weight: 600;
   font-family: "NewYork";
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1;
 }
 
 .caption {
-  font-size: 1.125rem;
-  line-height: 1;
-  font-weight: 600;
   font-family: "NewYork";
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1;
 }
 
 .link {
-  font-size: 1.125rem;
-  line-height: 1;
-  font-weight: 600;
   font-family: "NewYork";
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1;
 }
 
 .blockquote {
-  font-size: 1.25rem;
-  line-height: 1;
-  font-weight: 600;
   font-family: "SFPro";
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+button {
+  background-color: #6366f1;
+  padding: 8px 8px 8px 8px;
+  color: white;
 }/*# sourceMappingURL=main.css.map */

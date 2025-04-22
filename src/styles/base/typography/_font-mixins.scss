@@ -1,8 +1,0 @@
-@mixin font-style($type, $size) {
-  $style-map: map-get($font-styles, $type);
-  $size-map: map-get($style-map, $size);
-  font-size: map-get($size-map, font-size);
-  line-height: map-get($size-map, line-height);
-  font-weight: map-get($size-map, font-weight);
-  font-family: map-get($size-map, font-family);
-}

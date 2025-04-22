@@ -1,10 +1,27 @@
-/*--- LINE-HEIGHT ---*/
-$line-height-default: 1;
+/*--- FONT-FAMILY ---*/
+$font-primary: 'NewYork';
+$font-secondary: 'SFPro';
+
+/*--- FONT-FACE ---*/
+@font-face {
+  src: url("../assets/fonts/font_NewYork/NewYork.ttf");
+  font-family: $font-primary;
+}
+
+@font-face {
+  src: url("../assets/fonts/font_SFPro/SF-Pro.ttf");
+  font-family: $font-secondary;
+}
 
 /*--- FONT-WEIGHT ---*/
-$font-weight-lg: 800;
-$font-weight-md: 600;
+$font-weight-xs: 100;
 $font-weight-sm: 300;
+$font-weight-md: 500;
+$font-weight-lg: 700;
+$font-weight-xl: 900;
+
+/*--- LINE-HEIGHT ---*/
+$line-height-default: 1;
 
 /*--- FONT-STYLES ---*/
 $font-styles: (
@@ -54,3 +71,12 @@ $font-styles: (
     lg: (font-family: $font-secondary, font-size: 1.375rem, font-weight: $font-weight-lg, line-height: $line-height-default),
   )
 );
+
+@mixin font-style($type, $size) {
+  $style-map: map-get($font-styles, $type);
+  $size-map: map-get($style-map, $size);
+  font-family: map-get($size-map, font-family);
+  font-size: map-get($size-map, font-size);
+  font-weight: map-get($size-map, font-weight);
+  line-height: map-get($size-map, line-height);
+}

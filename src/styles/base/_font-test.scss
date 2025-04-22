@@ -1,0 +1,50 @@
+h1 {
+  @include font-style(title, md);
+  padding: $space-inset-md;
+  outline: 2px solid red;
+}
+
+h2 {
+  @include font-style(subtitle1, md);
+  padding: $space-inset-sm;
+  outline: 2px solid green;
+}
+
+h3 {
+  @include font-style(subtitle2, md);
+  padding: $space-inset-stretch-md;
+  outline: 2px solid blue;
+}
+
+h4 {
+  @include font-style(subtitle3, md);
+  padding: $space-stack-lg;
+  outline: 2px solid red;
+}
+
+p {
+  @include font-style(body, md);
+  padding: $space-inline-md;
+}
+
+.small {
+  @include font-style(small, md);
+}
+
+.caption {
+  @include font-style(caption, md);
+}
+
+.link {
+  @include font-style(link, md);
+}
+
+.blockquote {
+  @include font-style(blockquote, md);
+}
+
+button {
+  background-color: $indigo-60;
+  padding: $space-inset-sm;
+  color: white;
+}
