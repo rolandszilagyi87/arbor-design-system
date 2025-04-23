@@ -46,9 +46,19 @@ p {
 button {
   background-color: $color-blue-60;
   padding: $space-inset-squish-md;
+  margin: $space-inset-lg;
   color: white;
+  border-radius: $border-radius-xl;
 }
 
 button:hover {
   background-color: $color-blue-80;
+}
+
+h5 {
+  @include font-style(title, lg);
+  color: $color-success;
+  padding: $space-inset-lg;
+  outline: 2px solid green;
+  text-shadow: 1px 1px 1px black;
 }
