@@ -1,57 +1,49 @@
 /*--- PRIMARY COLORS ---*/
-$color-primary-blue: #1a75ff;
-$color-primary-indigo: #6366f1;
-$color-primary-green: #22c55e;
+$color-blue-20: #001a4d;
+$color-blue-40: #0047b3;
+$color-blue-60: #1a75ff;
+$color-blue-80: #80b3ff;
+$color-blue-95: #e6f0ff;
 
-$blue-20: #001a4d;
-$blue-40: #0047b3;
-$blue-60: #1a75ff;
-$blue-80: #80b3ff;
-$blue-95: #e6f0ff;
+$color-indigo-20: #312e81;
+$color-indigo-40: #4338ca;
+$color-indigo-60: #6366f1;
+$color-indigo-80: #a5b4fc;
+$color-indigo-95: #e0e7ff;
 
-$indigo-20: #312e81;
-$indigo-40: #4338ca;
-$indigo-60: #6366f1;
-$indigo-80: #a5b4fc;
-$indigo-95: #e0e7ff;
+/*--- COMPLEMENTARY COLORS ---*/
+$color-error-20: #7f1d1d;
+$color-error-40: #b91c1c;
+$color-error-60: #ef4444;
+$color-error-80: #fca5a5;
+$color-error-95: #fee2e2;
 
-$green-20: #14532d;
-$green-40: #166534;
-$green-60: #22c55e;
-$green-80: #86efac;
-$green-95: #dcfce7;
+$color-success-20: #14532d;
+$color-success-40: #166534;
+$color-success-60: #22c55e;
+$color-success-80: #86efac;
+$color-success-95: #dcfce7;
 
-/*--- SECONDARY COLORS ---*/
-$error-20: #7f1d1d;
-$error-40: #b91c1c;
-$error-60: #ef4444;
-$error-80: #fca5a5;
-$error-95: #fee2e2;
+$color-warning-20: #78350f;
+$color-warning-40: #b45309;
+$color-warning-60: #f59e0b;
+$color-warning-80: #fde68a;
+$color-warning-95: #fef9c3;
 
-$success-20: #14532d;
-$success-40: #166534;
-$success-60: #22c55e;
-$success-80: #86efac;
-$success-95: #dcfce7;
+$color-neutral-100: #f9f9f9;
+$color-neutral-200: #eeeeee;
+$color-neutral-300: #dcdcdc;
+$color-neutral-800: #2c2c2c;
+$color-neutral-900: #121212;
 
-$warning-20: #78350f;
-$warning-40: #b45309;
-$warning-60: #f59e0b;
-$warning-80: #fde68a;
-$warning-95: #fef9c3;
-
-$info-20: #1e3a8a;
-$info-40: #2563eb;
-$info-60: #3b82f6;
-$info-80: #93c5fd;
-$info-95: #dbeafe;
-
-$gray-100: #f9f9f9;
-$gray-200: #eeeeee;
-$gray-300: #dcdcdc;
-$gray-800: #2c2c2c;
-$gray-900: #121212;
-
+/*--- MAIN COLORS ---*/
+$color-primary: $color-blue-60;
+$color-secondary: $color-indigo-60;
+$color-error: $color-error-60;
+$color-success: $color-success-60;
+$color-warning: $color-warning-60;
+$color-interactive: $color-blue-60;;
+$color-disabled: $color-neutral-300;
 
 /*--- CONTRAST CHECKER ---*/
 // https://webaim.org/resources/contrastchecker/

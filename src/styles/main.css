@@ -37,7 +37,8 @@ button, a, svg {
 }
 
 /*--- PRIMARY COLORS ---*/
-/*--- SECONDARY COLORS ---*/
+/*--- COMPLEMENTARY COLORS ---*/
+/*--- MAIN COLORS ---*/
 /*--- CONTRAST CHECKER ---*/
 /*--- FONT-FAMILY ---*/
 /*--- FONT-FACE ---*/
@@ -49,6 +50,7 @@ button, a, svg {
   src: url("../assets/fonts/font_SFPro/SF-Pro.ttf");
   font-family: "SFPro";
 }
+/*--- FONT-SIZE ---*/
 /*--- FONT-WEIGHT ---*/
 /*--- LINE-HEIGHT ---*/
 /*--- FONT-STYLES ---*/
