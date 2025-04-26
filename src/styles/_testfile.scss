@@ -1,16 +1,19 @@
 h1 {
   color: $color-primary;
   @include font-style(title, md);
+  @include text-shadow(2);
 }
 
 h2 {
   color: $color-warning;
   @include font-style(blockquote, md);
   @include border($border-width-md, $border-radius-circle, $color-primary);
+  @include elevation(2);
 }
 
 h3 {
   color: $color-disabled;
   @include font-style(link, md);
   @include border($border-width-sm, $border-radius-xl, $color-secondary);
+  @include elevation(5);
 }

@@ -53,16 +53,21 @@ button, a, svg {
 /*--- FONT-SIZE ---*/
 /*--- FONT-WEIGHT ---*/
 /*--- LINE-HEIGHT ---*/
-/*--- FONT-STYLES ---*/
+/*--- FONT-STYLES MAP ---*/
 /*--- FONT-STYLE MIXIN ---*/
 /*--- BORDER-WIDTH ---*/
 /*--- BORDER-RADIUS ---*/
+/*--- TEXT-SHADOWS MAP ---*/
+/*--- TEXT-SHADOWS MIXIN ---*/
+/*--- ELEVATION SHADOWS MAP ---*/
+/*--- ELEVATION SHADOWS MIXIN ---*/
 h1 {
   color: #1a75ff;
   font-family: "NewYork";
   font-size: 3.125rem;
   font-weight: 500;
   line-height: 1;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
 
 h2 {
@@ -73,6 +78,7 @@ h2 {
   line-height: 1;
   border: 0.2rem solid #1a75ff;
   border-radius: 50%;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 h3 {
@@ -83,4 +89,5 @@ h3 {
   line-height: 1;
   border: 0.1rem solid #6366f1;
   border-radius: 2rem;
+  box-shadow: 0px 19px 38px rgba(0, 0, 0, 0.3), 0px 15px 12px rgba(0, 0, 0, 0.22);
 }/*# sourceMappingURL=main.css.map */
