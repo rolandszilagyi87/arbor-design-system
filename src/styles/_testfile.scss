@@ -2,13 +2,16 @@ h1 {
   color: $color-primary;
   @include font-style(title, md);
   @include text-shadow(2);
+  margin: $space-inset-md;
 }
 
 h2 {
   color: $color-warning;
   @include font-style(blockquote, md);
-  @include border($border-width-md, $border-radius-circle, $color-primary);
-  @include elevation(2);
+  @include border($border-width-md, $border-radius-md, $color-primary);
+  @include elevation(3);
+  padding: $space-inset-squish-md;
+  margin: $space-stack-md;
 }
 
 h3 {
