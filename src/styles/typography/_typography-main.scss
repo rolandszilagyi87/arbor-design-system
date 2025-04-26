@@ -1,0 +1,61 @@
+@import 'typography-family';
+@import 'typography-elements';
+
+/*--- FONT-STYLES ---*/
+$font-styles: (
+  title: (
+    sm: (font-family: $font-primary, font-size: $font-size-title-sm, font-weight: $font-weight-sm, line-height: $line-height-default),
+    md: (font-family: $font-primary, font-size: $font-size-title-md, font-weight: $font-weight-md, line-height: $line-height-default),
+    lg: (font-family: $font-primary, font-size: $font-size-title-lg, font-weight: $font-weight-lg, line-height: $line-height-default),
+  ),
+  subtitle1: (
+    sm: (font-family: $font-primary, font-size: $font-size-subtitle1-sm, font-weight: $font-weight-sm, line-height: $line-height-default),
+    md: (font-family: $font-primary, font-size: $font-size-subtitle1-md, font-weight: $font-weight-md, line-height: $line-height-default),
+    lg: (font-family: $font-primary, font-size: $font-size-subtitle1-lg, font-weight: $font-weight-lg, line-height: $line-height-default),
+  ),
+  subtitle2: (
+    sm: (font-family: $font-primary, font-size: $font-size-subtitle2-sm, font-weight: $font-weight-sm, line-height: $line-height-default),
+    md: (font-family: $font-primary, font-size: $font-size-subtitle2-md, font-weight: $font-weight-md, line-height: $line-height-default),
+    lg: (font-family: $font-primary, font-size: $font-size-subtitle2-lg, font-weight: $font-weight-lg, line-height: $line-height-default),
+  ),
+  subtitle3: (
+    sm: (font-family: $font-primary, font-size: $font-size-subtitle3-sm, font-weight: $font-weight-sm, line-height: $line-height-default),
+    md: (font-family: $font-primary, font-size: $font-size-subtitle3-md, font-weight: $font-weight-md, line-height: $line-height-default),
+    lg: (font-family: $font-primary, font-size: $font-size-subtitle3-lg, font-weight: $font-weight-lg, line-height: $line-height-default),
+  ),
+  body: (
+    sm: (font-family: $font-primary, font-size: $font-size-body-sm, font-weight: $font-weight-sm, line-height: $line-height-default),
+    md: (font-family: $font-primary, font-size: $font-size-body-md, font-weight: $font-weight-md, line-height: $line-height-default),
+    lg: (font-family: $font-primary, font-size: $font-size-body-lg, font-weight: $font-weight-lg, line-height: $line-height-default),
+  ),
+  small: (
+    sm: (font-family: $font-primary, font-size: $font-size-small-sm, font-weight: $font-weight-sm, line-height: $line-height-default),
+    md: (font-family: $font-primary, font-size: $font-size-small-md, font-weight: $font-weight-md, line-height: $line-height-default),
+    lg: (font-family: $font-primary, font-size: $font-size-small-lg, font-weight: $font-weight-lg, line-height: $line-height-default),
+  ),
+  caption: (
+    sm: (font-family: $font-primary, font-size: $font-size-caption-sm, font-weight: $font-weight-sm, line-height: $line-height-default),
+    md: (font-family: $font-primary, font-size: $font-size-caption-md, font-weight: $font-weight-md, line-height: $line-height-default),
+    lg: (font-family: $font-primary, font-size: $font-size-caption-lg, font-weight: $font-weight-lg, line-height: $line-height-default),
+  ),
+  link: (
+    sm: (font-family: $font-primary, font-size: $font-size-link-sm, font-weight: $font-weight-sm, line-height: $line-height-default),
+    md: (font-family: $font-primary, font-size: $font-size-link-md, font-weight: $font-weight-md, line-height: $line-height-default),
+    lg: (font-family: $font-primary, font-size: $font-size-link-lg, font-weight: $font-weight-lg, line-height: $line-height-default),
+  ),
+  blockquote: (
+    sm: (font-family: $font-secondary, font-size: $font-size-blockquote-sm, font-weight: $font-weight-sm, line-height: $line-height-default),
+    md: (font-family: $font-secondary, font-size: $font-size-blockquote-md, font-weight: $font-weight-md, line-height: $line-height-default),
+    lg: (font-family: $font-secondary, font-size: $font-size-blockquote-lg, font-weight: $font-weight-lg, line-height: $line-height-default),
+  )
+);
+
+/*--- FONT-STYLE MIXIN ---*/
+@mixin font-style($type, $size) {
+  $style-map: map-get($font-styles, $type);
+  $size-map: map-get($style-map, $size);
+  font-family: map-get($size-map, "font-family");
+  font-size: map-get($size-map, "font-size");
+  font-weight: map-get($size-map, "font-weight");
+  line-height: map-get($size-map, "line-height");
+}

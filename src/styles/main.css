@@ -39,4 +39,42 @@ button, a, svg {
 /*--- PRIMARY COLORS ---*/
 /*--- SECONDARY COLORS ---*/
 /*--- MAIN COLORS ---*/
-/*--- CONTRAST CHECKER ---*//*# sourceMappingURL=main.css.map */
+/*--- CONTRAST CHECKER ---*/
+/*--- FONT-FAMILY ---*/
+/*--- FONT-FACE ---*/
+@font-face {
+  src: url("../assets/fonts/font_NewYork/NewYork.ttf");
+  font-family: "NewYork";
+}
+@font-face {
+  src: url("../assets/fonts/font_SFPro/SF-Pro.ttf");
+  font-family: "SFPro";
+}
+/*--- FONT-SIZE ---*/
+/*--- FONT-WEIGHT ---*/
+/*--- LINE-HEIGHT ---*/
+/*--- FONT-STYLES ---*/
+/*--- FONT-STYLE MIXIN ---*/
+h1 {
+  color: #1a75ff;
+  font-family: "NewYork";
+  font-size: 3.125rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+h2 {
+  color: #f59e0b;
+  font-family: "SFPro";
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+h3 {
+  color: #dcdcdc;
+  font-family: "NewYork";
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1;
+}/*# sourceMappingURL=main.css.map */

@@ -1,66 +1,14 @@
 h1 {
+  color: $color-primary;
   @include font-style(title, md);
-  padding: $space-inset-md;
-  outline: 2px solid red;
 }
 
 h2 {
-  @include font-style(subtitle1, md);
-  padding: $space-inset-sm;
-  outline: 2px solid green;
-}
-
-h3 {
-  @include font-style(subtitle2, md);
-  padding: $space-inset-stretch-md;
-  outline: 2px solid blue;
-}
-
-h4 {
-  @include font-style(subtitle3, md);
-  padding: $space-stack-lg;
-  outline: 2px solid red;
-}
-
-p {
-  @include font-style(body, md);
-  padding: $space-inline-md;
-}
-
-.small {
-  @include font-style(small, md);
-}
-
-.caption {
-  @include font-style(caption, md);
-}
-
-.link {
-  @include font-style(link, md);
-}
-
-.blockquote {
+  color: $color-warning;
   @include font-style(blockquote, md);
 }
 
-button {
-  background-color: $color-blue-60;
-  padding: $space-inset-squish-md;
-  margin: $space-inset-lg;
-  color: white;
-}
-
-button:hover {
-  background-color: $color-blue-80;
-}
-
-h5 {
-  @include font-style(title, lg);
-  color: $color-success;
-  padding: $space-inset-lg;
-  text-shadow: 1px 1px 1px black;
-  width: 50vw;
-  height: auto;
-  @include elevation(3);
-  margin: $space-inset-xl;
+h3 {
+  color: $color-disabled;
+  @include font-style(link, md);
 }
