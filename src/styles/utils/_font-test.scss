@@ -48,7 +48,6 @@ button {
   padding: $space-inset-squish-md;
   margin: $space-inset-lg;
   color: white;
-  border-radius: $border-radius-xl;
 }
 
 button:hover {
@@ -59,6 +58,9 @@ h5 {
   @include font-style(title, lg);
   color: $color-success;
   padding: $space-inset-lg;
-  outline: 2px solid green;
   text-shadow: 1px 1px 1px black;
+  width: 50vw;
+  height: auto;
+  @include elevation(3);
+  margin: $space-inset-xl;
 }
