@@ -6,9 +6,11 @@ h1 {
 h2 {
   color: $color-warning;
   @include font-style(blockquote, md);
+  @include border($border-width-md, $border-radius-circle, $color-primary);
 }
 
 h3 {
   color: $color-disabled;
   @include font-style(link, md);
+  @include border($border-width-sm, $border-radius-xl, $color-secondary);
 }
