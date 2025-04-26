@@ -20,3 +20,20 @@ h3 {
   @include border($border-width-sm, $border-radius-xl, $color-secondary);
   @include elevation(5);
 }
+
+.airplay {
+  @include icon(xl, $color-success);
+}
+
+.battery__cont {
+  margin: $space-inset-xl;
+  padding: $space-inset-md;
+  @include elevation(3);
+  @include border($border-width-md, $border-radius-sm, $color-primary);
+  display: flex;
+  justify-content: center
+}
+
+.battery {
+  @include icon(xl, $color-error);
+}
