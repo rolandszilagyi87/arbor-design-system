@@ -47,6 +47,11 @@ $font-styles: (
     sm: (font-family: $font-secondary, font-size: $font-size-blockquote-sm, font-weight: $font-weight-sm, line-height: $line-height-default),
     md: (font-family: $font-secondary, font-size: $font-size-blockquote-md, font-weight: $font-weight-md, line-height: $line-height-default),
     lg: (font-family: $font-secondary, font-size: $font-size-blockquote-lg, font-weight: $font-weight-lg, line-height: $line-height-default),
+  ),
+  button: (
+    sm: (font-family: $font-secondary, font-size: $font-size-button-sm, font-weight: $font-weight-md, line-height: $line-height-default),
+    md: (font-family: $font-secondary, font-size: $font-size-button-md, font-weight: $font-weight-md, line-height: $line-height-default),
+    lg: (font-family: $font-secondary, font-size: $font-size-button-lg, font-weight: $font-weight-md, line-height: $line-height-default),
   )
 );
 

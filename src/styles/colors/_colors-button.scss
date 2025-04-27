@@ -1,0 +1,29 @@
+@import 'colors-primary';
+@import 'colors-secondary';
+
+/*--- BUTTON COLORS ---*/
+$color-button-primary-bg: $color-blue-60;
+$color-button-primary-text: white;
+$color-button-secondary-bg: $color-blue-80;
+$color-button-secondary-text: $color-blue-40;
+$color-button-ghost-bg: transparent;
+$color-button-ghost-text: $color-blue-40;
+
+/*--- HOVER COLORS ---*/
+$color-button-primary-hover-bg: $color-blue-80;
+$color-button-secondary-hover-bg: $color-neutral-300;
+$color-button-ghost-hover-bg: $color-blue-20;
+
+/*--- FOCUS COLORS ---*/
+$color-button-primary-focus-ring: $color-blue-40;
+$color-button-secondary-focus-ring: $color-neutral-200;
+$color-button-ghost-focus-ring: $color-error-40;
+
+/*--- ACTIVE COLORS ---*/
+$color-button-primary-active-bg: $color-blue-80;
+$color-button-secondary-active-bg: $color-success-20;
+$color-button-ghost-active-bg: $color-blue-20;
+
+/*--- DISABLED COLORS ---*/
+$button-disabled-bg: $color-neutral-100;
+$button-disabled-text: $color-warning-20;
