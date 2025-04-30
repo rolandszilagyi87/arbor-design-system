@@ -1,11 +1,13 @@
-/*--- SPACING BASE VALUES ---*/
-$base-spacing: 16px; //
+/*--- SPACING SCALE ---*/
+$spacing-scale: 2;
+$base-spacing: 16px;
 
-$space-xs: $base-spacing / 2;   // 8px
-$space-sm: $base-spacing;       // 16px
-$space-md: $base-spacing * 2;   // 32px
-$space-lg: $base-spacing * 4;   // 64px
-$space-xl: $base-spacing * 8;   // 128px
+/*--- SPACING TOKENS ---*/
+$space-xs: $base-spacing / $spacing-scale;      // 8px
+$space-sm: $base-spacing;                       // 16px
+$space-md: $space-sm * $spacing-scale;          // 32px
+$space-lg: $space-md * $spacing-scale;          // 64px
+$space-xl: $space-lg * $spacing-scale;          // 128px
 
 /*--- SPACING CONCEPTIONS ---*/
 // INSET (BELÉPŐ) - A TÉRKÖZ A KOMPONENS BELSŐJÉBEN
