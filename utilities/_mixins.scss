@@ -67,3 +67,49 @@
     }
   }
 } // @include breakpoint(tablet)
+
+/*--- SIZING MIXIN ---*/
+@mixin sizing($width-size: 'full', $height-size: 'full') {
+  @if $width-size == 'xs' {
+    width: $sizing-width-xs;
+  } @else if $width-size == 'sm' {
+    width: $sizing-width-sm;
+  } @else if $width-size == 'md' {
+    width: $sizing-width-md;
+  } @else if $width-size == 'lg' {
+    width: $sizing-width-lg;
+  } @else if $width-size == 'xl' {
+    width: $sizing-width-xl;
+  } @else if $width-size == 'full' {
+    width: $sizing-width-full;
+  }
+
+  @if $height-size == 'xs' {
+    height: $sizing-height-xs;
+  } @else if $height-size == 'sm' {
+    height: $sizing-height-sm;
+  } @else if $height-size == 'md' {
+    height: $sizing-height-md;
+  } @else if $height-size == 'lg' {
+    height: $sizing-height-lg;
+  } @else if $height-size == 'xl' {
+    height: $sizing-height-xl;
+  } @else if $height-size == 'full' {
+    height: $sizing-height-full;
+  }
+} // @include sizing('md', 'lg');
+
+/*--- MAX-WIDTH MIXIN ---*/
+@mixin sizing-max-width($max-width-size: 'xl') {
+  @if $max-width-size == 'xs' {
+    max-width: $sizing-max-xs;
+  } @else if $max-width-size == 'sm' {
+    max-width: $sizing-max-sm;
+  } @else if $max-width-size == 'md' {
+    max-width: $sizing-max-md;
+  } @else if $max-width-size == 'lg' {
+    max-width: $sizing-max-lg;
+  } @else if $max-width-size == 'xl' {
+    max-width: $sizing-max-xl;
+  }
+} // @include max-width-sizing('xl');

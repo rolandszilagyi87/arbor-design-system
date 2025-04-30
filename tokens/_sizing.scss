@@ -1,0 +1,26 @@
+/*--- SIZING ---*/
+$base-size: 1rem;     // 16px
+$base-height: 2rem;   // 32px
+
+/*--- WIDTH SCALE ---*/
+$sizing-width-xs: $base-size * 4;      // 64px
+$sizing-width-sm: $base-size * 8;      // 128px
+$sizing-width-md: $base-size * 16;     // 256px
+$sizing-width-lg: $base-size * 24;     // 384px
+$sizing-width-xl: $base-size * 32;     // 512px
+$sizing-width-full: 100%;              // Full width
+
+/*--- HEIGHT SCALE ---*/
+$sizing-height-xs: $base-height * 1;    // 32px
+$sizing-height-sm: $base-height * 1.5;  // 48px
+$sizing-height-md: $base-height * 2;    // 64px
+$sizing-height-lg: $base-height * 3;    // 96px
+$sizing-height-xl: $base-height * 4;    // 128px
+$sizing-height-full: 100vh;             // Full height
+
+/*--- MAX-WIDTH SCALES (for containers) ---*/
+$sizing-max-xs: $base-size * 20;   // 320px
+$sizing-max-sm: $base-size * 30;   // 480px
+$sizing-max-md: $base-size * 48;   // 768px
+$sizing-max-lg: $base-size * 64;   // 1024px
+$sizing-max-xl: $base-size * 80;   // 1280px
