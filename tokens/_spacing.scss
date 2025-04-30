@@ -1,0 +1,39 @@
+/*--- SPACING BASE VALUES ---*/
+$base-spacing: 16px; //
+
+$space-xs: $base-spacing / 2;   // 8px
+$space-sm: $base-spacing;       // 16px
+$space-md: $base-spacing * 2;   // 32px
+$space-lg: $base-spacing * 4;   // 64px
+$space-xl: $base-spacing * 8;   // 128px
+
+/*--- SPACING CONCEPTIONS ---*/
+// INSET (BELÉPŐ) - A TÉRKÖZ A KOMPONENS BELSŐJÉBEN
+$inset-sm: $space-sm;
+$inset-md: $space-md;
+$inset-lg: $space-lg;
+
+// SQUISH INSET - TÉRKÖZ CSÖKKENTÉSE AZ ELEM TETEJÉN ÉS ALJÁN
+$squish-inset-sm: $space-xs;
+$squish-inset-md: $space-sm;
+$squish-inset-lg: $space-md;
+
+// STRETCH INSET - TÉRKÖZ NÖVELÉSE AZ ELEM TETEJÉN ÉS ALJÁN
+$stretch-inset-sm: $space-md;
+$stretch-inset-md: $space-lg;
+$stretch-inset-lg: $space-xl;
+
+// STACK - ELEM EGYMÁS ALATTI ELRENDEZÉSE
+$stack-sm: $space-xs;
+$stack-md: $space-sm;
+$stack-lg: $space-md;
+
+// INLINE - AZ ELEM EGYMÁS MELLETTI MEGJELENÍTÉSE
+$inline-sm: $space-xs;
+$inline-md: $space-sm;
+$inline-lg: $space-md;
+
+// GRID - A RÁCSRENDSZER MARGÓI ÉS SÁVJAI
+$grid-sm: $space-sm;
+$grid-md: $space-md;
+$grid-lg: $space-lg;

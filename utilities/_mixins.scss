@@ -18,3 +18,28 @@
     }
   }
 } // @include text-style("title");
+
+/*--- SPACING MIXIN ---*/
+@mixin spacing($type, $direction, $value) {
+  @if $type == margin {
+    @if $direction == inline {
+      margin-left: $value;
+      margin-right: $value;
+    }
+    @else if $direction == block {
+      margin-top: $value;
+      margin-bottom: $value;
+    }
+  }
+  @else if $type == padding {
+    @if $direction == inline {
+      padding-left: $value;
+      padding-right: $value;
+    }
+    @else if $direction == block {
+      padding-top: $value;
+      padding-bottom: $value;
+    }
+  }
+} /* @include spacing(padding, inline, $space-lg);
+     @include spacing(padding, block, $space-lg); */
