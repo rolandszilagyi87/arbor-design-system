@@ -113,3 +113,13 @@
     max-width: $sizing-max-xl;
   }
 } // @include max-width-sizing('xl');
+
+/*--- BORDER MIXIN ---*/
+@mixin border($width, $color, $radius: null) {
+  border: $width solid $color;
+
+  @if $radius != null {
+    border-radius: $radius;
+  }
+} /* @include border($border-width-md, red);
+     @include border($border-width-sm, blue, $border-radius-lg); */
