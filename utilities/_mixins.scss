@@ -123,3 +123,47 @@
   }
 } /* @include border($border-width-md, red);
      @include border($border-width-sm, blue, $border-radius-lg); */
+
+/*--- TEXT-SHADOW MIXIN ---*/
+@mixin text-shadow($color, $size) {
+  text-shadow: $color $text-shadow-size-sm;
+} // @include text-shadow($shadow-color-dark, $text-shadow-size-lg);
+
+/*--- BOX-SHADOW MIXIN WITH MULTIPLE LAYERS ---*/
+@mixin box-shadow($level1, $color1: $shadow-color-dark, $level2: null, $color2: null) {
+  $shadow1: null;
+  $shadow2: null;
+
+  @if $level1 == 0 {
+    $shadow1: #{$box-shadow-0} #{$color1};
+  } @else if $level1 == 1 {
+    $shadow1: #{$box-shadow-1} #{$color1};
+  } @else if $level1 == 2 {
+    $shadow1: #{$box-shadow-2} #{$color1};
+  } @else if $level1 == 3 {
+    $shadow1: #{$box-shadow-3} #{$color1};
+  } @else if $level1 == 4 {
+    $shadow1: #{$box-shadow-4} #{$color1};
+  } @else if $level1 == 5 {
+    $shadow1: #{$box-shadow-5} #{$color1};
+  }
+
+  @if $level2 != null {
+    @if $level2 == 0 {
+      $shadow2: #{$box-shadow-0} #{$color2};
+    } @else if $level2 == 1 {
+      $shadow2: #{$box-shadow-1} #{$color2};
+    } @else if $level2 == 2 {
+      $shadow2: #{$box-shadow-2} #{$color2};
+    } @else if $level2 == 3 {
+      $shadow2: #{$box-shadow-3} #{$color2};
+    } @else if $level2 == 4 {
+      $shadow2: #{$box-shadow-4} #{$color2};
+    } @else if $level2 == 5 {
+      $shadow2: #{$box-shadow-5} #{$color2};
+    }
+    box-shadow: #{$shadow1}, #{$shadow2};
+  } @else {
+    box-shadow: #{$shadow1};
+  }
+} // @include box-shadow(3, $shadow-color-medium);
