@@ -1,4 +1,5 @@
 @use "../tokens/index" as *;
+@use "../base/index" as *;
 
 /*--- TEXT STYLE MIXIN ---*/
 @mixin text-style($style-name) {
@@ -167,3 +168,28 @@
     box-shadow: #{$shadow1};
   }
 } // @include box-shadow(3, $shadow-color-medium);
+
+/* --- ICON MIXIN --- */
+@mixin icon($size, $color: black) {
+  @if $size == sm {
+    width: $icon-size-sm;
+    height: $icon-size-sm;
+  }
+  @else if $size == md {
+    width: $icon-size-md;
+    height: $icon-size-md;
+  }
+  @else if $size == lg {
+    width: $icon-size-lg;
+    height: $icon-size-lg;
+  }
+  @else if $size == xl {
+    width: $icon-size-xl;
+    height: $icon-size-xl;
+  }
+
+  flex-shrink: 0;
+  color: $color;
+  stroke: currentColor;
+} /* @include icon(md, blue);
+     @include icon(xl)  */
