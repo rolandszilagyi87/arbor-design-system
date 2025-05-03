@@ -1,49 +1,33 @@
 /*--- PRIMARY COLORS ---*/
-$color-blue-20: #001a4d;
-$color-blue-40: #0047b3;
-$color-blue-60: #1a75ff;
-$color-blue-80: #80b3ff;
-$color-blue-95: #e6f0ff;
+$color-primary-400: #5c6bc0;
+$color-primary-500: #3f51b5;
+$color-primary-700: #303f9f;
+$color-primary-900: #1a237e;
 
-$color-indigo-20: #312e81;
-$color-indigo-40: #4338ca;
-$color-indigo-60: #6366f1;
-$color-indigo-80: #a5b4fc;
-$color-indigo-95: #e0e7ff;
-
-/*--- SECONDARY COLORS ---*/
-$color-success-20: #14532d;
-$color-success-40: #166534;
-$color-success-60: #22c55e;
-$color-success-80: #86efac;
-$color-success-95: #dcfce7;
-
-$color-warning-20: #78350f;
-$color-warning-40: #b45309;
-$color-warning-60: #f59e0b;
-$color-warning-80: #fde68a;
-$color-warning-95: #fef9c3;
-
-$color-error-20: #7f1d1d;
-$color-error-40: #b91c1c;
-$color-error-60: #ef4444;
-$color-error-80: #fca5a5;
-$color-error-95: #fee2e2;
-
-$color-info-20: #001a4d;
-$color-info-40: #0047b3;
-$color-info-60: #1a75ff;
-$color-info-80: #80b3ff;
-$color-info-95: #e6f0ff;
-
-/*--- NEUTRAL COLORS ---*/
 $color-neutral-100: #f9f9f9;
 $color-neutral-200: #eeeeee;
-$color-neutral-300: #dcdcdc;
 $color-neutral-800: #2c2c2c;
 $color-neutral-900: #121212;
 
-/*--- SHADOW COLORS ---*/
-$shadow-color-light: rgba(0, 0, 0, 0.1);
-$shadow-color-medium: rgba(0, 0, 0, 0.2);
-$shadow-color-dark: rgba(0, 0, 0, 0.3);
+$color-digital-blue: #0067C5;
+
+/*--- SECONDARY COLORS ---*/
+$color-success-400: #66BB6A;
+$color-success-500: #4CAF50;
+$color-success-700: #388E3C;
+$color-success-900: #1B5E20;
+
+$color-warning-400: #FFB74D;
+$color-warning-500: #FF9800;
+$color-warning-700: #F57C00;
+$color-warning-900: #E65100;
+
+$color-error-400: #EF5350;
+$color-error-500: #F44336;
+$color-error-700: #D32F2F;
+$color-error-900: #C62828;
+
+$color-info-400: #64B5F6;
+$color-info-500: #2196F3;
+$color-info-700: #1976D2;
+$color-info-900: #1565C0;

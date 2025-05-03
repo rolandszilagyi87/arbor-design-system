@@ -2,7 +2,7 @@
 @use "../base/index" as *;
 
 /*--- TEXT STYLE MIXIN ---*/
-@mixin text-style($style-name) {
+@mixin text($style-name) {
   $style: map-get($text-styles, $style-name);
 
   @if $style {
@@ -127,8 +127,8 @@
 
 /*--- TEXT-SHADOW MIXIN ---*/
 @mixin text-shadow($color, $size) {
-  text-shadow: $color $text-shadow-size-sm;
-} // @include text-shadow($shadow-color-dark, $text-shadow-size-lg);
+  text-shadow: $color $text-shadow-sm;
+} // @include text-shadow($shadow-color-dark, $text-shadow-lg);
 
 /*--- BOX-SHADOW MIXIN WITH MULTIPLE LAYERS ---*/
 @mixin box-shadow($level1, $color1: $shadow-color-dark, $level2: null, $color2: null) {

@@ -1,17 +1,28 @@
 @use '../tokens/index' as *;
 
 /*--- COLORS ---*/
-$color-primary: $color-blue-60;
-$color-secondary: $color-indigo-60;
+$color-primary: $color-primary-500;
 
-$color-success: $color-success-60;
-$color-warning: $color-warning-60;
-$color-error: $color-error-60;
-$color-info: $color-info-60;
+/*--- FEEDBACK COLORS ---*/
+$color-success: $color-success-500;
+$color-warning: $color-warning-500;
+$color-error: $color-error-500;
+$color-info: $color-info-500;
 
-$color-default: $color-blue-60;
-$color-focus: $color-blue-95;
-$color-hover: $color-blue-80;
-$color-press: $color-blue-40;
-$color-disabled: $color-neutral-300;
+/*--- INTERACTIVE STATES ---*/
+$color-default: $color-primary-500;
+$color-focus: $color-primary-900;
+$color-hover: $color-primary-700;
+$color-press: $color-primary-400;
+$color-disabled: $color-neutral-200;
 $color-progress: $color-neutral-900;
+
+/*--- TEXT COLORS ---*/
+$color-text-primary: $color-neutral-900;
+$color-text-secondary: $color-neutral-800;
+$color-text-link: $color-digital-blue;
+
+/*--- SHADOW COLORS ---*/
+$shadow-color-light: rgba(0, 0, 0, 0.1);
+$shadow-color-medium: rgba(0, 0, 0, 0.2);
+$shadow-color-dark: rgba(0, 0, 0, 0.3);
