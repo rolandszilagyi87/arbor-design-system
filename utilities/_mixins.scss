@@ -48,17 +48,17 @@
 /*--- BREAKPOINTS MIXIN ---*/
 @mixin screen($device) {
   @if $device == mobile {
-    @media (min-width: $mobile) and (max-width: $mobile-max) {
+    @media (min-width: $mobile) {
       @content;
     }
   }
   @else if $device == tablet {
-    @media (min-width: $tablet) and (max-width: $tablet-max) {
+    @media (min-width: $tablet) {
       @content;
     }
   }
   @else if $device == laptop {
-    @media (min-width: $laptop) and (max-width: $laptop-max) {
+    @media (min-width: $laptop) {
       @content;
     }
   }
@@ -116,58 +116,39 @@
 } // @include max-width-sizing('xl');
 
 /*--- BORDER MIXIN ---*/
-@mixin border($width, $color, $radius: null) {
+@mixin border($width, $color, $radius) {
   border: $width solid $color;
-
-  @if $radius != null {
-    border-radius: $radius;
-  }
-} /* @include border($border-width-md, red);
-     @include border($border-width-sm, blue, $border-radius-lg); */
+  border-radius: $radius;
+} /* @include border($border-width-thick, red);
+     @include border($border-width-thin, blue, $border-radius-lg); */
 
 /*--- TEXT-SHADOW MIXIN ---*/
 @mixin text-shadow($color, $size) {
   text-shadow: $color $text-shadow-sm;
 } // @include text-shadow($shadow-color-dark, $text-shadow-lg);
 
-/*--- BOX-SHADOW MIXIN WITH MULTIPLE LAYERS ---*/
-@mixin box-shadow($level1, $color1: $shadow-color-dark, $level2: null, $color2: null) {
-  $shadow1: null;
-  $shadow2: null;
-
-  @if $level1 == 0 {
-    $shadow1: #{$box-shadow-0} #{$color1};
-  } @else if $level1 == 1 {
-    $shadow1: #{$box-shadow-1} #{$color1};
-  } @else if $level1 == 2 {
-    $shadow1: #{$box-shadow-2} #{$color1};
-  } @else if $level1 == 3 {
-    $shadow1: #{$box-shadow-3} #{$color1};
-  } @else if $level1 == 4 {
-    $shadow1: #{$box-shadow-4} #{$color1};
-  } @else if $level1 == 5 {
-    $shadow1: #{$box-shadow-5} #{$color1};
-  }
-
-  @if $level2 != null {
-    @if $level2 == 0 {
-      $shadow2: #{$box-shadow-0} #{$color2};
-    } @else if $level2 == 1 {
-      $shadow2: #{$box-shadow-1} #{$color2};
-    } @else if $level2 == 2 {
-      $shadow2: #{$box-shadow-2} #{$color2};
-    } @else if $level2 == 3 {
-      $shadow2: #{$box-shadow-3} #{$color2};
-    } @else if $level2 == 4 {
-      $shadow2: #{$box-shadow-4} #{$color2};
-    } @else if $level2 == 5 {
-      $shadow2: #{$box-shadow-5} #{$color2};
-    }
-    box-shadow: #{$shadow1}, #{$shadow2};
+@mixin box-shadow($level) {
+  @if $level == 0 {
+    box-shadow: $shadow-0;
+  } @else if $level == 1 {
+    $s: $shadow-1;
+    box-shadow: nth($s, 1) nth($s, 2) nth($s, 3) nth($s, 4);
+  } @else if $level == 2 {
+    $s: $shadow-2;
+    box-shadow: nth($s, 1) nth($s, 2) nth($s, 3) nth($s, 4);
+  } @else if $level == 3 {
+    $s: $shadow-3;
+    box-shadow: nth($s, 1) nth($s, 2) nth($s, 3) nth($s, 4);
+  } @else if $level == 4 {
+    $s: $shadow-4;
+    box-shadow: nth($s, 1) nth($s, 2) nth($s, 3) nth($s, 4);
+  } @else if $level == 5 {
+    $s: $shadow-5;
+    box-shadow: nth($s, 1) nth($s, 2) nth($s, 3) nth($s, 4);
   } @else {
-    box-shadow: #{$shadow1};
+    box-shadow: none;
   }
-} // @include box-shadow(3, $shadow-color-medium);
+}
 
 /* --- ICON MIXIN --- */
 @mixin icon($size, $color: black) {

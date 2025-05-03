@@ -3,11 +3,11 @@ $spacing-scale: 2;
 $base-spacing: 16px;
 
 /*--- SPACING TOKENS ---*/
-$space-xs: $base-spacing / $spacing-scale;      // 8px
-$space-sm: $base-spacing;                       // 16px
-$space-md: $space-sm * $spacing-scale;          // 32px
-$space-lg: $space-md * $spacing-scale;          // 64px
-$space-xl: $space-lg * $spacing-scale;          // 128px
+$space-xs: calc($base-spacing / $spacing-scale);   // 8px
+$space-sm: $base-spacing;                          // 16px
+$space-md: calc($space-sm * $spacing-scale);             // 32px
+$space-lg: calc($space-md * $spacing-scale);             // 64px
+$space-xl: calc($space-lg * $spacing-scale);             // 128px
 
 /*--- SPACING CONCEPTIONS ---*/
 // INSET (BELÉPŐ) - A TÉRKÖZ A KOMPONENS BELSŐJÉBEN

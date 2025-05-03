@@ -1,7 +1,11 @@
-/*--- BOX-SHADOW SIZES ---*/
-$box-shadow-0: 0px 0px 0px;
-$box-shadow-1: 0px 1px 3px;
-$box-shadow-2: 0px 3px 6px;
-$box-shadow-3: 0px 10px 20px;
-$box-shadow-4: 0px 15px 25px;
-$box-shadow-5: 0px 20px 40px;
+/*--- BOX-SHADOW DEFINITIONS ---*/
+$shadow-0: none;
+$shadow-1: (0, 2px, 5px, rgba(0, 0, 0, 0.26));
+$shadow-2: (0, 3px, 6px, rgba(0, 0, 0, 0.16));
+$shadow-3: (0, 10px, 20px, rgba(0, 0, 0, 0.19));
+$shadow-4: (0, 14px, 28px, rgba(0, 0, 0, 0.25));
+$shadow-5: (0, 19px, 38px, rgba(0, 0, 0, 0.30));
+
+// Box-shadow szintek a Material Design irányelvei alapján
+// Forrás: https://m3.material.io/styles/elevation/tokens
+// Értékek egyszerűsítve és SCSS változókba szervezve használatra

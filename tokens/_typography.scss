@@ -6,11 +6,11 @@ $font-secondary: 'SFPro';
 $font-scale: 1.2;
 $font-size-sm: 1rem;
 
-$font-size-xs: $font-size-sm / $font-scale;
-$font-size-md: $font-size-sm * $font-scale;
-$font-size-lg: $font-size-md * $font-scale;
-$font-size-xl: $font-size-lg * $font-scale;
-$font-size-xxl: $font-size-xl * $font-scale;
+$font-size-xs: calc($font-size-sm / $font-scale);
+$font-size-md: calc($font-size-sm * $font-scale);
+$font-size-lg: calc($font-size-md * $font-scale);
+$font-size-xl: calc($font-size-lg * $font-scale);
+$font-size-xxl: calc($font-size-xl * $font-scale);
 
 /*--- FONT-WEIGHT ---*/
 $font-weight-regular: 400;
