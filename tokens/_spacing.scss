@@ -1,41 +1,47 @@
+// === Tokens: SPACING ========
+
 /*--- SPACING SCALE ---*/
 $spacing-scale: 2;
-$base-spacing: 16px;
+$base-spacing: 2px;
 
 /*--- SPACING TOKENS ---*/
-$space-xs: calc($base-spacing / $spacing-scale);   // 8px
-$space-sm: $base-spacing;                          // 16px
-$space-md: calc($space-sm * $spacing-scale);             // 32px
-$space-lg: calc($space-md * $spacing-scale);             // 64px
-$space-xl: calc($space-lg * $spacing-scale);             // 128px
+$space-xs: $base-spacing;                         // 2px
+$space-sm: calc($base-spacing * $spacing-scale);  // 4px
+$space-md: calc($space-sm * $spacing-scale);      // 8px
+$space-lg: calc($space-md * $spacing-scale);      // 16px
+$space-xl: calc($space-lg * $spacing-scale);      // 32px
+$space-xxl: calc($space-xl * $spacing-scale);     // 64px
 
 /*--- SPACING CONCEPTIONS ---*/
-// INSET (BELÉPŐ) - A TÉRKÖZ A KOMPONENS BELSŐJÉBEN
-$inset-sm: $space-sm;
-$inset-md: $space-md;
-$inset-lg: $space-lg;
+// SQUARE-INSET (PADDING)
+$square-xs: ($space-sm $space-sm $space-sm $space-sm);      // 4px
+$square-sm: ($space-md $space-md $space-md $space-md);      // 8px
+$square-md: ($space-lg $space-lg $space-lg $space-lg);      // 16px
+$square-lg: ($space-xl $space-xl $space-xl $space-xl);      // 32px
+$square-xl: ($space-xxl $space-xxl $space-xxl $space-xxl);  // 64px
 
-// SQUISH INSET - TÉRKÖZ CSÖKKENTÉSE AZ ELEM TETEJÉN ÉS ALJÁN
-$squish-inset-sm: $space-xs;
-$squish-inset-md: $space-sm;
-$squish-inset-lg: $space-md;
+// SQUISH-INSET (PADDING) +50%
+$squish-sm: ($space-sm calc($space-sm * 2));   // 4px 8px
+$squish-md: ($space-md calc($space-md * 2));   // 8px 16px
+$squish-lg: ($space-lg calc($space-lg * 2));   // 16px 32px
 
-// STRETCH INSET - TÉRKÖZ NÖVELÉSE AZ ELEM TETEJÉN ÉS ALJÁN
-$stretch-inset-sm: $space-md;
-$stretch-inset-md: $space-lg;
-$stretch-inset-lg: $space-xl;
+// STRETCH-INSET (PADDING)
+$stretch-sm: (calc($space-sm * 1.5) $space-sm);   // 6px 4px
+$stretch-md: (calc($space-md * 1.5) $space-md);   // 12px 8px
+$stretch-lg: (calc($space-lg * 1.5) $space-lg);   // 16px 24px
 
-// STACK - ELEM EGYMÁS ALATTI ELRENDEZÉSE
-$stack-sm: $space-xs;
-$stack-md: $space-sm;
-$stack-lg: $space-md;
+// STACK (MARGIN)
+$stack-xs: ($base-spacing 0 0 0);   // 2px
+$stack-sm: ($space-sm 0 0 0);       // 4px
+$stack-md: ($space-md 0 0 0);       // 8px
+$stack-lg: ($space-lg 0 0 0);       // 16px
+$stack-xl: ($space-xl 0 0 0);       // 32px
+$stack-xxl: ($space-xxl 0 0 0);     // 64px
 
-// INLINE - AZ ELEM EGYMÁS MELLETTI MEGJELENÍTÉSE
-$inline-sm: $space-xs;
-$inline-md: $space-sm;
-$inline-lg: $space-md;
-
-// GRID - A RÁCSRENDSZER MARGÓI ÉS SÁVJAI
-$grid-sm: $space-sm;
-$grid-md: $space-md;
-$grid-lg: $space-lg;
+// INLINE (MARGIN)
+$inline-xs: (0 $base-spacing 0 0);  // 2px
+$inline-sm: (0 $space-sm 0 0);      // 4px
+$inline-md: (0 $space-md 0 0);      // 8px
+$inline-lg: (0 $space-lg 0 0);      // 16px
+$inline-xl: (0 $space-xl 0 0);      // 32px
+$inline-xxl: (0 $space-xl 0 0);     // 64px

@@ -1,0 +1,168 @@
+@use '../tokens/index' as *;
+@use '../base/index' as *;
+@use '../utilities/index' as *;
+
+.spacing {
+  background-color: $color-secondary;
+  color: $color-text-muted;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.items_cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: $color-text-muted;
+}
+
+.square-base {
+display: grid;
+place-items: center;
+width: 130px;
+height: 130px;
+border-color: $color-state-success;
+border-style: solid;
+margin: 0.5rem;
+}
+
+.square-xs {
+  border-width: $square-xs;
+}
+
+.square-sm {
+  border-width: $square-sm;
+}
+
+.square-md {
+  border-width: $square-md;
+}
+
+.square-lg {
+  border-width: $square-lg;
+}
+
+.square-xl {
+  border-width: $square-xl;
+}
+
+.squish-base {
+display: grid;
+place-items: center;
+width: 130px;
+height: 70px;
+border-color: $color-state-warning;
+border-style: solid;
+margin: 0.5rem;
+}
+
+.squish-sm {
+  border-width: $squish-sm;
+}
+
+.squish-md {
+  border-width: $squish-md;
+}
+
+.squish-lg {
+  border-width: $squish-lg;
+}
+
+.stretch-base {
+  display: grid;
+  place-items: center;
+  width: 130px;
+  height: 70px;
+  border-color: $color-state-info;
+  border-style: solid;
+  margin: 0.5rem;
+}
+
+.stretch-sm {
+  border-width: $stretch-sm;
+}
+
+.stretch-md {
+  border-width: $stretch-md;
+}
+
+.stretch-lg {
+  border-width: $stretch-lg;
+}
+
+.stack_cont {
+  display: flex;
+  flex-direction: column;
+}
+
+.stack-base {
+  display: grid;
+  place-items: center;
+  width: 200px;
+  border-color: $color-state-info;
+  border-style: solid;
+  margin: 0.5rem;
+}
+
+.stack-xs {
+  border-width: $stack-xs;
+}
+
+.stack-sm {
+  border-width: $stack-sm;
+}
+
+.stack-md {
+  border-width: $stack-md;
+}
+
+.stack-lg {
+  border-width: $stack-lg;
+}
+
+.stack-xl {
+  border-width: $stack-xl;
+}
+
+.stack-xxl {
+  border-width: $stack-xxl;
+}
+
+.inline_cont {
+  display: flex;
+}
+
+.inline-base {
+  display: grid;
+  place-items: center;
+  height: 200px;
+  border-color: $color-state-error;
+  border-style: solid;
+  margin: 0.5rem;
+}
+
+.inline-xs {
+  border-width: $inline-xs;
+}
+
+.inline-sm {
+  border-width: $inline-sm;
+}
+
+.inline-md {
+  border-width: $inline-md;
+}
+
+.inline-lg {
+  border-width: $inline-lg;
+}
+
+.inline-xl {
+  border-width: $inline-xl;
+}
+
+.inline-xxl {
+  border-width: $inline-xxl;
+}

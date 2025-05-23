@@ -1,0 +1,101 @@
+@use '../tokens/index' as *;
+
+.colors {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand-colors {
+  margin: 1rem;
+  
+  .color-primary {
+    color: $color-primary;
+  }
+
+  .color-secondary {
+    color: $color-secondary;
+  }
+}
+
+.background-colors {
+  margin: 1rem;
+
+  .color-bg-light {
+    background-color: $color-bg-light;
+    width: 200px;
+    height: 50px;
+  }
+
+  .color-bg-dark {
+    background-color: $color-bg-dark;
+    color: $color-text-muted;
+    width: 200px;
+    height: 50px;
+  }
+}
+
+.text-colors {
+  margin: 1rem;
+
+  .color-text-default {
+    color: $color-text-default;
+  }
+
+  .color-text-heading {
+    color: $color-text-heading;
+  }
+
+  .color-text-muted {
+    color: $color-text-muted;
+  }
+
+  .color-text-link {
+    color: $color-text-link;
+  }
+}
+
+.state-colors {
+  margin: 1rem;
+
+  .color-state-success {
+    color: $color-state-success;
+  }
+  .color-state-warning {
+    color: $color-state-warning;
+  }
+  .color-state-error {
+    color: $color-state-error;
+  }
+  .color-state-info {
+    color: $color-state-info;
+  }
+}
+
+.border-colors {
+  margin: 1rem;
+
+  .color-border-light {
+    border: 3px solid $color-border-light;
+    width: 250px;
+    height: 100px;
+    background-color: $color-bg-light;
+  }
+
+  .color-border-medium {
+    border: 3px solid $color-border-medium;
+    width: 250px;
+    height: 100px;
+  }
+
+  .color-border-dark {
+    border: 3px solid $color-border-dark;
+    width: 250px;
+    height: 100px;
+  }
+}
+
+a {
+  color: $color-text-link;
+}

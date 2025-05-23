@@ -1,3 +1,5 @@
+// === Utilities: HELPERS ========
+
 @use '../tokens/index' as *;
 
 /*--- FONT-FACE ---*/
@@ -10,4 +12,3 @@
   src: url("../assets/fonts/font_SFPro/SF-Pro.ttf");
   font-family: $font-secondary;
 }
-

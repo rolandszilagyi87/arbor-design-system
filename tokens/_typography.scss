@@ -1,11 +1,14 @@
+// === Tokens: TYPOGRAPHY ========
+
+/*--- FONT SCALE ---*/
+$font-scale: 1.2;
+
 /*--- FONT-FAMILY ---*/
 $font-primary: 'NewYork';
 $font-secondary: 'SFPro';
 
 /*--- FONT-SIZE ---*/
-$font-scale: 1.2;
 $font-size-sm: 1rem;
-
 $font-size-xs: calc($font-size-sm / $font-scale);
 $font-size-md: calc($font-size-sm * $font-scale);
 $font-size-lg: calc($font-size-md * $font-scale);
@@ -13,68 +16,13 @@ $font-size-xl: calc($font-size-lg * $font-scale);
 $font-size-xxl: calc($font-size-xl * $font-scale);
 
 /*--- FONT-WEIGHT ---*/
-$font-weight-regular: 400;
+$font-weight-regular: 300;
 $font-weight-medium: 500;
 $font-weight-bold: 700;
+$font-weight-heavy: 900;
 
 /*--- LINE-HEIGHT ---*/
-$line-height-tight: 1.2;
-$line-height-normal: 1.4;
-$line-height-relaxed: 1.6;
-$line-height-loose: 1.8;
-
-/*--- TEXT-SHADOW SIZE ---*/
-$text-shadow-sm: 0px 1px 2px;
-$text-shadow-md: 0px 2px 4px;
-$text-shadow-lg: 0px 4px 6px;
-
-/*--- TEXT STYLES ---*/
-$text-styles: (
-  "title": (
-    font-size: $font-size-xxl,
-    font-weight: $font-weight-bold,
-    line-height: $line-height-tight
-  ),
-  "subtitle1": (
-    font-size: $font-size-xl,
-    font-weight: $font-weight-medium,
-    line-height: $line-height-tight
-  ),
-  "subtitle2": (
-    font-size: $font-size-lg,
-    font-weight: $font-weight-medium,
-    line-height: $line-height-normal
-  ),
-  "subtitle3": (
-    font-size: $font-size-md,
-    font-weight: $font-weight-medium,
-    line-height: $line-height-normal
-  ),
-  "body": (
-    font-size: $font-size-sm,
-    font-weight: $font-weight-regular,
-    line-height: $line-height-relaxed
-  ),
-  "small": (
-    font-size: $font-size-xs,
-    font-weight: $font-weight-regular,
-    line-height: $line-height-relaxed
-  ),
-  "caption": (
-    font-size: $font-size-xs,
-    font-weight: $font-weight-medium,
-    line-height: $line-height-normal,
-    text-transform: uppercase
-  ),
-  "link": (
-    font-size: $font-size-sm,
-    font-weight: $font-weight-medium,
-    line-height: $line-height-normal
-  ),
-  "blockquote": (
-    font-size: $font-size-lg,
-    font-weight: $font-weight-regular,
-    line-height: $line-height-loose,
-    font-style: italic
-  )
-);
+$line-height-tight: 1.4;
+$line-height-normal: 1.6;
+$line-height-relaxed: 1.8;
+$line-height-loose: 2;
