@@ -1,0 +1,97 @@
+// === Components/Atoms: BUTTON ========
+
+@use '../../tokens/index' as *;
+
+/*--- BUTTON-FONT-SIZE ---*/
+$button-font-size-sm: 0.875rem;
+$button-font-size-md: 1rem;
+$button-font-size-lg: 1.125rem;
+
+/*--- BUTTON-BG-COLORS ---*/
+$button-bg-default: $color-primary;
+$button-bg-hover: $color-primary;
+$button-bg-focus: $color-primary;
+$button-bg-press: $color-primary;
+$button-bg-disabled: $color-primary;
+$button-bg-inverted: $color-primary;
+
+/*--- BUTTON-TEXT-COLORS ---*/
+$button-text-default: $color-neutral-100;
+$button-text-hover: $color-primary-700;
+$button-text-focus: $color-primary;
+$button-text-press: $color-primary-900;
+$button-text-disabled: $color-neutral-200;
+$button-text-inverted: $color-primary;
+
+/*--- BUTTON-SPACING ---*/
+$button-padding-sm: $squish-sm;
+$button-padding-md: $squish-md;
+$button-padding-lg: $squish-lg;
+
+/*--- BUTTON-BORDER-RADIUS ---*/
+$button-border-sm: 1px;
+$button-border-md: 1.5px;
+$button-border-lg: 4px;
+
+/*--- BUTTON-BASE ---*/
+.btn {
+  font-family: $font-secondary;
+  font-size: $button-font-size-md;
+  font-weight: $font-weight-medium;
+  cursor: pointer;
+  padding: 8px 16px; // $squish-md  
+}
+
+/*--- BUTTON-PRIMARY ---*/
+.btn--primary {
+  background-color: $button-bg-default;
+  color: $button-text-default;
+  border: none;
+  border-radius: $button-border-lg;
+
+  &:hover:not(:disabled) {
+    background-color: $button-text-hover;
+  }
+
+  &:active:not(:disabled) {
+    background-color: $button-text-press;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    background-color: $button-text-disabled;
+    color: $button-text-default;
+  }
+}
+
+/*--- BUTTON-SECONDARY ---*/
+.btn--secondary {
+  background-color: transparent;
+  color: $button-text-inverted;
+  border: $button-border-md solid;
+  border-radius: $button-border-lg;
+
+  &:hover:not(:disabled) {
+    color: $button-text-hover;
+  }
+
+  &:active:not(:disabled) {
+    color: $button-text-press;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    color: $button-text-disabled;
+  }
+}
+
+/*--- BUTTON-SIZES ---*/
+.btn--small {
+  font-size: $button-font-size-sm;
+  padding: 4px 8px; // $squish-sm
+}
+
+.btn--large {
+  font-size: $button-font-size-lg;
+  padding: 16px 32px; // $squish-lg
+}
