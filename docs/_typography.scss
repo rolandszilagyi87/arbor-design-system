@@ -7,111 +7,149 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: $color-bg-dark;
-  color: $color-text-medium;
+  background-color: $color-bg-light;
+  color: $color-text-dark;
 }
 
-.font_base {
+h1, h2 {
+  margin: 1rem;
+}
+
+.font_families {
   display: flex;
-  justify-content: space-between;
-  width: 80vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.font_cont {
+.font-primary {
+  display: flex;
+  align-items: center;
+
+  h3 {
+    color: $color-primary;
+    font-family: $font-primary;
+    font-size: $font-size-xl;
+  }
+}
+
+.font-secondary {
+  display: flex;
+  align-items: center;
+
+  h3 {
+    color: $color-primary;
+    font-family: $font-secondary;
+    font-size: $font-size-xl;
+  }
+}
+
+.font_sizes {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  .font-details {
-    display: flex;
+  .font-size {
+    color: $color-primary;
+    margin: 0.5rem;
+  }
+
+  .font-size-xs {
+    font-size: $font-size-xs;
+  }
+
+  .font-size-sm {
+    font-size: $font-size-sm;
+  }
+
+  .font-size-md {
+    font-size: $font-size-md;
+  }
+
+  .font-size-lg {
+    font-size: $font-size-lg;
+  }
+
+  .font-size-xl {
+    font-size: $font-size-xl;
+  }
+
+  .font-size-xxl {
+    font-size: $font-size-xxl;
   }
 }
 
-.font-name-primary {
-  font-family: $font-primary;
-  color: $color-primary;
+.font_weights {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .font-weight {
+    color: $color-primary;
+    margin: 0.5rem;
+    font-size: $font-size-xl;
+  }
+
+  .font-weight-regular {
+    font-weight: $font-weight-regular;
+  }
+
+  .font-weight-medium {
+    font-weight: $font-weight-medium;
+  }
+
+  .font-weight-bold {
+    font-weight: $font-weight-bold;
+  }
+
+  .font-weight-heavy {
+    font-weight: $font-weight-heavy;
+  }
 }
 
-.font-name-secondary {
-  font-family: $font-secondary;
-  color: $color-primary;
+.font_heights {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .font-height {
+    color: $color-primary;
+    margin: 0.5rem;
+    font-size: $font-size-xl;
+    outline: 1px solid $color-bg-semidark;
+  }
+
+  .line-height-tight {
+    line-height: $line-height-tight;
+  }
+
+  .line-height-normal {
+    line-height: $line-height-normal;
+  }
+
+  .line-height-relaxed {
+    line-height: $line-height-relaxed;
+  }
+
+  .line-height-loose {
+    line-height: $line-height-loose;
+  }
 }
 
-.font-size-xs {
-  font-size: $font-size-xs;
-  color: $color-primary;
-}
+.links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 
-.font-size-sm {
-  font-size: $font-size-sm;
-  color: $color-primary;
-}
-
-.font-size-md {
-  font-size: $font-size-md;
-  color: $color-primary;
-}
-
-.font-size-lg {
-  font-size: $font-size-lg;
-  color: $color-primary;
-}
-
-.font-size-xl {
-  font-size: $font-size-xl;
-  color: $color-primary;
-}
-
-.font-size-xxl {
-  font-size: $font-size-xxl;
-  color: $color-primary;
-}
-
-.font-weight-regular {
-  font-weight: $font-weight-regular;
-  color: $color-primary;
-}
-
-.font-weight-medium {
-  font-weight: $font-weight-medium;
-  color: $color-primary;
-}
-
-.font-weight-bold {
-  font-weight: $font-weight-bold;
-  color: $color-primary;
-}
-
-.font-weight-heavy {
-  font-weight: $font-weight-heavy;
-  color: $color-primary;
-}
-
-.line-height-tight {
-  line-height: $line-height-tight;
-  outline: 1px solid $color-bg-light;
-  color: $color-primary;
-}
-
-.line-height-normal {
-  line-height: $line-height-normal;
-  outline: 1px solid $color-bg-light;
-  color: $color-primary;
-}
-
-.line-height-relaxed {
-  line-height: $line-height-relaxed;
-  outline: 1px solid $color-bg-light;
-  color: $color-primary;
-}
-
-.line-height-loose {
-  line-height: $line-height-loose;
-  outline: 1px solid $color-bg-light;
-  color: $color-primary;
-}
-
-a {
+  a {
   color: $color-text-link;
+  margin: 0.5rem;
+  }
+
+  a:hover {
+    color: $color-text-link-hover;
+  }
 }

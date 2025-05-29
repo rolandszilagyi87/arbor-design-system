@@ -8,11 +8,11 @@
   background-color: $color-bg-light;
 }
 
-h1 {
+h1, h2 {
   margin: 1rem;
 }
 
-.brand-colors {
+.brand_colors {
   text-align: center;
   margin: 1rem;
   
@@ -27,7 +27,7 @@ h1 {
   }
 }
 
-.background-colors {
+.background_colors {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -61,7 +61,7 @@ h1 {
   }
 }
 
-.text-colors {
+.text_colors {
   margin: 1rem;
 
   .color-text-light {
@@ -90,7 +90,7 @@ h1 {
   }
 }
 
-.state-colors {
+.state_colors {
   margin: 1rem;
 
   .color-state-success {
@@ -107,7 +107,7 @@ h1 {
   }
 }
 
-.border-colors {
+.border_colors {
   margin: 1rem;
 
   .color-border {
