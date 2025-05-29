@@ -11,7 +11,7 @@
   color: $color-text-dark;
 
   h1, h2 {
-    margin: 1rem;
+    @include spacing('margin', $square-md);
   }
 
   .font_families {
@@ -51,7 +51,7 @@
 
     .font-size {
       color: $color-primary;
-      margin: 0.5rem;
+      @include spacing('margin', $square-sm);
     }
 
     .font-size-xs {
@@ -87,7 +87,7 @@
 
     .font-weight {
       color: $color-primary;
-      margin: 0.5rem;
+      @include spacing('margin', $square-sm);
       font-size: $font-size-xl;
     }
 
@@ -116,7 +116,7 @@
 
     .font-height {
       color: $color-primary;
-      margin: 0.5rem;
+      @include spacing('margin', $square-sm);
       font-size: $font-size-xl;
       outline: 1px solid $color-bg-semidark;
     }
@@ -145,7 +145,7 @@
 
     a {
     color: $color-text-link;
-    margin: 0.5rem;
+    @include spacing('margin', $square-sm);
     }
 
     a:hover {

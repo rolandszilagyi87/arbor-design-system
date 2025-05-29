@@ -1,4 +1,5 @@
 @use '../tokens/index' as *;
+@use '../utilities/index' as *;
 
 .page-colors {
   display: flex;
@@ -8,12 +9,12 @@
   background-color: $color-bg-light;
 
   h1, h2 {
-    margin: 1rem;
+    @include spacing('margin', $square-md);
   }
 
   .brand_colors {
     text-align: center;
-    margin: 1rem;
+    @include spacing('margin', $square-md);
     
     .color-primary {
       color: $color-primary;
@@ -32,7 +33,7 @@
     justify-content: center;
     align-items: stretch;
     width: 200px;
-    margin: 1rem;
+    @include spacing('margin', $square-md);
 
     .color-bg {
       text-align: center;
@@ -61,7 +62,7 @@
   }
 
   .text_colors {
-    margin: 1rem;
+    @include spacing('margin', $square-md);
 
     .color-text-light {
       color: $color-text-light;
@@ -90,7 +91,7 @@
   }
 
   .state_colors {
-    margin: 1rem;
+    @include spacing('margin', $square-md);
 
     .color-state-success {
       color: $color-state-success;
@@ -107,7 +108,7 @@
   }
 
   .border_colors {
-    margin: 1rem;
+    @include spacing('margin', $square-md);
 
     .color-border {
       width: 250px;
@@ -141,7 +142,7 @@
 
     a {
     color: $color-text-link;
-    margin: 0.5rem;
+    @include spacing('margin', $square-md);
     }
 
     a:hover {
