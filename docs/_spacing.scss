@@ -4,7 +4,7 @@
 
 .spacing {
   background-color: $color-secondary;
-  color: $color-text-muted;
+  color: $color-text-medium;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,7 +15,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  color: $color-text-muted;
+  color: $color-text-medium;
 }
 
 .square-base {

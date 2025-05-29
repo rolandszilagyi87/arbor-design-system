@@ -5,54 +5,88 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: $color-bg-light;
+}
+
+h1 {
+  margin: 1rem;
 }
 
 .brand-colors {
+  text-align: center;
   margin: 1rem;
   
   .color-primary {
     color: $color-primary;
+    border: 1px solid $color-border-medium;
   }
 
   .color-secondary {
     color: $color-secondary;
+    background-color: $color-bg-dark;
   }
 }
 
 .background-colors {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  width: 200px;
   margin: 1rem;
+
+  .color-bg {
+    text-align: center;
+    height: 100px;
+  }
 
   .color-bg-light {
     background-color: $color-bg-light;
-    width: 200px;
-    height: 50px;
+    border: 1px solid $color-border-medium;
+  }
+
+  .color-bg-medium {
+    background-color: $color-bg-medium;
+    color: $color-text-dark;
+  }
+
+  .color-bg-semidark {
+    background-color: $color-bg-semidark;
+    color: $color-text-light;
   }
 
   .color-bg-dark {
     background-color: $color-bg-dark;
-    color: $color-text-muted;
-    width: 200px;
-    height: 50px;
+    color: $color-text-medium;
   }
 }
 
 .text-colors {
   margin: 1rem;
 
-  .color-text-default {
-    color: $color-text-default;
+  .color-text-light {
+    color: $color-text-light;
+    background-color: $color-bg-dark;
   }
 
-  .color-text-heading {
-    color: $color-text-heading;
+  .color-text-medium {
+    color: $color-text-medium;
   }
 
-  .color-text-muted {
-    color: $color-text-muted;
+  .color-text-semidark {
+    color: $color-text-semidark;
+  }
+
+  .color-text-dark {
+    color: $color-text-dark;
   }
 
   .color-text-link {
     color: $color-text-link;
+  }
+
+  .color-text-link-hover {
+    color: $color-text-link-hover;
   }
 }
 
@@ -76,26 +110,42 @@
 .border-colors {
   margin: 1rem;
 
-  .color-border-light {
-    border: 3px solid $color-border-light;
+  .color-border {
     width: 250px;
     height: 100px;
-    background-color: $color-bg-light;
+    margin: 1rem;
+  }
+
+  .color-border-light {
+    border: 1px solid $color-border-light;
   }
 
   .color-border-medium {
-    border: 3px solid $color-border-medium;
-    width: 250px;
-    height: 100px;
+    border: 1px solid $color-border-medium;
+    background-color: $color-bg-light;
+  }
+
+  .color-border-semidark {
+    border: 1px solid $color-border-semidark;
+    background-color: $color-bg-light;
   }
 
   .color-border-dark {
-    border: 3px solid $color-border-dark;
-    width: 250px;
-    height: 100px;
+    border: 1px solid $color-border-dark;
   }
 }
 
-a {
+.links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  a {
   color: $color-text-link;
+  margin: 0.5rem;
+  }
+
+  a:hover {
+    color: $color-text-link-hover;
+  }
 }
