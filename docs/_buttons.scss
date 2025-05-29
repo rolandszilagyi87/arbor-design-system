@@ -9,6 +9,7 @@
 .buttons_elements {
   display: flex;
   justify-content: center;
+  margin: 1rem;
 }
 
 .buttons {
@@ -20,9 +21,9 @@
   color: $color-text-muted;
 }
 
-// provizoris
-.provizoris {
+.buttons_sizes {
   display: flex;
-  width: 100vw;
   justify-content: space-evenly;
+  width: 90vw;
+  align-items: center;
 }

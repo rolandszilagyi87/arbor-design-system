@@ -34,10 +34,8 @@ $button-border-md: 1.5px;
 $button-border-lg: 4px;
 
 /*--- BUTTON-SHADOW ---*/
-$button-shadow-color: rgba(0, 0, 0, 0.35);
-$button-shadow-sm: 0px 18px 40px -12px;
-$button-shadow-md: 0px 0.5rem 3rem -12px;
-$button-shadow-lg: 0px 2rem 40px -1px;
+$button-shadow-sm: 0px 18px 40px -12px rgba(0, 0, 0, 0.35);
+$button-shadow-md: 0px 0.75rem 1rem -5px rgba(0, 0, 0, 0.35);
 
 /*--- BUTTON-BASE ---*/
 .btn {
@@ -54,7 +52,7 @@ $button-shadow-lg: 0px 2rem 40px -1px;
   color: $button-text-default;
   border: none;
   border-radius: $button-border-lg;
-  box-shadow: #{$button-shadow-md} #{$button-bg-default};
+  box-shadow: $button-shadow-md;
 
   &:hover:not(:disabled) {
     background-color: $button-text-hover;
@@ -78,7 +76,7 @@ $button-shadow-lg: 0px 2rem 40px -1px;
   color: $button-text-inverted;
   border: $button-border-md solid;
   border-radius: $button-border-lg;
-  box-shadow: #{$button-shadow-md} #{$button-bg-default};
+  box-shadow: $button-shadow-md;
 
   &:hover:not(:disabled) {
     color: $button-text-hover;
