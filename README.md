@@ -19,3 +19,4 @@
 - az .scss fileokban maximum 2 szint mélység megengedett
 - minden oldalon van egy h1 es h2 osztaly aminek van egy 'margin: 1 rem' attributuma
 - minden oldal aljan van egy 'div.links' ami display flex-es, margin-al
+- minden .html file stilusa az .scss-ben scoope-olva van a body-ban
