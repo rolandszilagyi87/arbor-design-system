@@ -48,12 +48,9 @@ button, a, svg {
 /*--- FONT-SIZE ---*/
 /*--- FONT-WEIGHT ---*/
 /*--- LINE-HEIGHT ---*/
-/*--- BORDER-WIDTH ---*/
-/*--- BORDER-RADIUS ---*/
 /*--- SPACING SCALE ---*/
 /*--- SPACING TOKENS ---*/
 /*--- SPACING CONCEPTIONS ---*/
-/* ICON SIZES */
 /*--- FONT-FACE ---*/
 @font-face {
   src: url("../assets/fonts/font_NewYork/NewYork.ttf");
@@ -63,6 +60,7 @@ button, a, svg {
   src: url("../assets/fonts/font_SFPro/SF-Pro.ttf");
   font-family: "SFPro";
 }
+/*--- SPACING MIXIN ---*/
 .page-colors {
   display: flex;
   flex-direction: column;

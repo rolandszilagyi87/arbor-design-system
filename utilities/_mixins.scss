@@ -1,0 +1,10 @@
+// === Utilities: MIXINS ========
+
+/*--- SPACING MIXIN ---*/
+@mixin spacing($token-name, $token-value) {
+  @if str-index($token-name, 'stack') or str-index($token-name, 'inline') {
+    margin: $token-value !important;
+  } @else {
+    padding: $token-value !important;
+  }
+}
