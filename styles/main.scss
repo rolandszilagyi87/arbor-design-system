@@ -1,13 +1,8 @@
 @use '../base/index' as *;
 @use '../tokens/index' as *;
 @use '../utilities/index' as *;
-@use '../components/atoms/index' as *;
 
-// DOCS
-@use '../docs/colors' as *;
-@use '../docs/icons' as *;
-@use '../docs/typography' as *;
-@use '../docs/borders' as *;
-@use '../docs/spacing' as *;
-@use '../docs/buttons' as *;
-@use '../docs/index' as *;
+// STYLES
+@use '../styles/colors' as *;
+@use '../styles/typography' as *;
+@use '../styles/index' as *;
