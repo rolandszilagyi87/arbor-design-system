@@ -11,7 +11,7 @@
   color: $color-text-dark;
 
   h1, h2 {
-    @include space-padding('square-md');
+    @include inset-square(md);
   }
 
   .font_families {
@@ -51,7 +51,7 @@
 
     .font-size {
       color: $color-primary;
-      @include space-padding('square-sm');
+      @include inset-square(sm);
     }
 
     .font-size-xs {
@@ -87,7 +87,7 @@
 
     .font-weight {
       color: $color-primary;
-      @include space-padding('square-sm');
+      @include inset-square(sm);
       font-size: $font-size-xl;
     }
 
@@ -116,7 +116,7 @@
 
     .font-height {
       color: $color-primary;
-      @include space-padding('square-sm');
+      @include inset-square(sm);
       font-size: $font-size-xl;
       outline: 1px solid $color-bg-semidark;
     }
@@ -145,7 +145,7 @@
 
     a {
     color: $color-text-link;
-    @include space-padding('square-sm');
+    @include inset-square(md);
     }
 
     a:hover {

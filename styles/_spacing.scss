@@ -9,7 +9,7 @@
   background-color: $color-bg-light;
 
   h1, h2 {
-    @include space-padding('square-md');
+    @include inset-square(md);
   }
 
   .items_cont {
@@ -26,27 +26,27 @@
     height: 175px;
     border-color: $color-state-success;
     border-style: solid;
-    @include space-margin-custom('all', 'lg');
+    @include margin-square(md);
   }
 
   .square-xs {
-    border-width: $space-inset-square-xs;
+    border-width: $space-square-xs;
   }
 
   .square-sm {
-    border-width: $space-inset-square-sm;
+    border-width: $space-square-sm;
   }
 
   .square-md {
-    border-width: $space-inset-square-md;
+    border-width: $space-square-md;
   }
 
   .square-lg {
-    border-width: $space-inset-square-lg;
+    border-width: $space-square-lg;
   }
 
   .square-xl {
-    border-width: $space-inset-square-xl;
+    border-width: $space-square-xl;
   }
 
   .squish-base {
@@ -56,19 +56,19 @@
     height: 70px;
     border-color: $color-state-warning;
     border-style: solid;
-    @include space-margin-custom('all', 'lg');
+    @include margin-square(md);
   }
 
   .squish-sm {
-    border-width: $space-inset-squish-sm;
+    border-width: $space-squish-sm;
   }
 
   .squish-md {
-    border-width: $space-inset-squish-md;
+    border-width: $space-squish-md;
   }
 
   .squish-lg {
-    border-width: $space-inset-squish-lg;
+    border-width: $space-squish-lg;
   }
 
   .stretch-base {
@@ -78,19 +78,19 @@
     height: 70px;
     border-color: $color-state-info;
     border-style: solid;
-    @include space-margin-custom('all', 'lg');
+    @include margin-square(md);
   }
 
   .stretch-sm {
-    border-width: $space-inset-stretch-sm;
+    border-width: $space-stretch-sm;
   }
 
   .stretch-md {
-    border-width: $space-inset-stretch-md;
+    border-width: $space-stretch-md;
   }
 
   .stretch-lg {
-    border-width: $space-inset-stretch-lg;
+    border-width: $space-stretch-lg;
   }
 
   .stack-base {
@@ -99,7 +99,7 @@
     width: 200px;
     border-color: $color-state-error;
     border-style: solid;
-    @include space-margin-custom('all', 'lg');
+    @include margin-square(md);
   }
 
   .stack-xs {
@@ -132,7 +132,7 @@
     height: 200px;
     border-color: $color-primary;
     border-style: solid;
-    @include space-margin-custom('all','lg');
+    @include margin-square(md);
   }
 
   .inline-xs {

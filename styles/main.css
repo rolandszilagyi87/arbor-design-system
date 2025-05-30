@@ -51,7 +51,31 @@ button, a, svg {
 /*--- SPACING SCALE ---*/
 /*--- SPACING TOKENS ---*/
 /*--- SPACING CONCEPTIONS ---*/
-/*--- MAP STRUCTURE ---*/
+/*
+
+inset-square    |     padding     |     minden oldalon azonos
+inset-stack     |     padding     |     bottom
+inset-inline    |     padding     |     right
+
+inset-squish    |     padding     |     x:y - 2:1
+inset-stretch   |     padding     |     x:y - 1:2
+
+inset-top       |     padding     |     top
+inset-left      |     padding     |     left
+
+-------------------------------------------------------------
+
+margin-square   |     margin      |     minden oldalon azonos
+margin-stack    |     margin      |     bottom
+margin-inline   |     margin      |     right
+
+margin-squish   |     margin      |     x:y - 2:1
+margin-stretch  |     margin      |     x:y - 1:2
+
+margin-top      |     margin      |     top
+margin-left     |     margin      |     left
+
+*/
 /*--- FONT-FACE ---*/
 @font-face {
   src: url("../assets/fonts/font_NewYork/NewYork.ttf");
@@ -61,10 +85,8 @@ button, a, svg {
   src: url("../assets/fonts/font_SFPro/SF-Pro.ttf");
   font-family: "SFPro";
 }
-/*--- SPACE PADDING (square, squish, stretch) ---*/
-/*--- SPACE MARGIN (stack, inline) ---*/
-/*--- SPACE PADDING CUSTOM ---*/
-/*--- SPACE MARGIN CUSTOM ---*/
+/*--- SPACING (PADDING) ---*/
+/*--- SPACING (MARGIN) ---*/
 .page-colors {
   display: flex;
   flex-direction: column;
@@ -304,7 +326,7 @@ button, a, svg {
 }
 .page-typography .links a {
   color: #6b8df0;
-  padding: 8px 8px 8px 8px;
+  padding: 16px 16px 16px 16px;
 }
 .page-typography .links a:hover {
   color: #253d73;
@@ -333,7 +355,7 @@ button, a, svg {
   height: 175px;
   border-color: #5dbf6e;
   border-style: solid;
-  margin: 16px;
+  margin: 16px 16px 16px 16px;
 }
 .page-spacing .square-xs {
   border-width: 4px 4px 4px 4px;
@@ -357,7 +379,7 @@ button, a, svg {
   height: 70px;
   border-color: #ffcc66;
   border-style: solid;
-  margin: 16px;
+  margin: 16px 16px 16px 16px;
 }
 .page-spacing .squish-sm {
   border-width: 4px 8px;
@@ -375,7 +397,7 @@ button, a, svg {
   height: 70px;
   border-color: #66ccff;
   border-style: solid;
-  margin: 16px;
+  margin: 16px 16px 16px 16px;
 }
 .page-spacing .stretch-sm {
   border-width: 6px 4px;
@@ -392,7 +414,7 @@ button, a, svg {
   width: 200px;
   border-color: #ff6666;
   border-style: solid;
-  margin: 16px;
+  margin: 16px 16px 16px 16px;
 }
 .page-spacing .stack-xs {
   border-width: 0 0 2px 0;
@@ -418,7 +440,7 @@ button, a, svg {
   height: 200px;
   border-color: #3e6ae1;
   border-style: solid;
-  margin: 16px;
+  margin: 16px 16px 16px 16px;
 }
 .page-spacing .inline-xs {
   border-width: 0 2px 0 0;
@@ -479,7 +501,7 @@ button, a, svg {
 .page-index main a {
   font-size: 1.44rem;
   color: #6b8df0;
-  padding: 6px 4px;
+  margin: 0 0 4px 0;
 }
 .page-index main a:hover {
   color: #253d73;
