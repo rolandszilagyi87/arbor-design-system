@@ -9,12 +9,12 @@
   background-color: $color-bg-light;
 
   h1, h2 {
-    @include spacing('margin', $square-md);
+    @include space-padding('square-md');
   }
 
   .brand_colors {
     text-align: center;
-    @include spacing('margin', $square-md);
+    @include space-padding('square-md');
     
     .color-primary {
       color: $color-primary;
@@ -33,7 +33,7 @@
     justify-content: center;
     align-items: stretch;
     width: 200px;
-    @include spacing('margin', $square-md);
+    @include space-padding('square-md');
 
     .color-bg {
       text-align: center;
@@ -62,7 +62,7 @@
   }
 
   .text_colors {
-    @include spacing('margin', $square-md);
+    @include space-padding('square-md');
 
     .color-text-light {
       color: $color-text-light;
@@ -91,7 +91,7 @@
   }
 
   .state_colors {
-    @include spacing('margin', $square-md);
+    @include space-padding('square-md');
 
     .color-state-success {
       color: $color-state-success;
@@ -108,7 +108,7 @@
   }
 
   .border_colors {
-    @include spacing('margin', $square-md);
+    @include space-padding('square-md');
 
     .color-border {
       width: 250px;
@@ -142,7 +142,7 @@
 
     a {
     color: $color-text-link;
-    @include spacing('margin', $square-md);
+    @include space-padding('square-md');
     }
 
     a:hover {

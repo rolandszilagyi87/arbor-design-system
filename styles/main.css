@@ -51,6 +51,7 @@ button, a, svg {
 /*--- SPACING SCALE ---*/
 /*--- SPACING TOKENS ---*/
 /*--- SPACING CONCEPTIONS ---*/
+/*--- MAP STRUCTURE ---*/
 /*--- FONT-FACE ---*/
 @font-face {
   src: url("../assets/fonts/font_NewYork/NewYork.ttf");
@@ -60,7 +61,10 @@ button, a, svg {
   src: url("../assets/fonts/font_SFPro/SF-Pro.ttf");
   font-family: "SFPro";
 }
-/*--- SPACING MIXIN ---*/
+/*--- SPACE PADDING (square, squish, stretch) ---*/
+/*--- SPACE MARGIN (stack, inline) ---*/
+/*--- SPACE PADDING CUSTOM ---*/
+/*--- SPACE MARGIN CUSTOM ---*/
 .page-colors {
   display: flex;
   flex-direction: column;
@@ -69,11 +73,11 @@ button, a, svg {
   background-color: #ffffff;
 }
 .page-colors h1, .page-colors h2 {
-  margin: 16px 16px 16px 16px;
+  padding: 16px 16px 16px 16px;
 }
 .page-colors .brand_colors {
   text-align: center;
-  margin: 16px 16px 16px 16px;
+  padding: 16px 16px 16px 16px;
 }
 .page-colors .brand_colors .color-primary {
   color: #3e6ae1;
@@ -89,7 +93,7 @@ button, a, svg {
   justify-content: center;
   align-items: stretch;
   width: 200px;
-  margin: 16px 16px 16px 16px;
+  padding: 16px 16px 16px 16px;
 }
 .page-colors .background_colors .color-bg {
   text-align: center;
@@ -112,7 +116,7 @@ button, a, svg {
   color: #f4f4f4;
 }
 .page-colors .text_colors {
-  margin: 16px 16px 16px 16px;
+  padding: 16px 16px 16px 16px;
 }
 .page-colors .text_colors .color-text-light {
   color: #ffffff;
@@ -134,7 +138,7 @@ button, a, svg {
   color: #253d73;
 }
 .page-colors .state_colors {
-  margin: 16px 16px 16px 16px;
+  padding: 16px 16px 16px 16px;
 }
 .page-colors .state_colors .color-state-success {
   color: #5dbf6e;
@@ -149,7 +153,7 @@ button, a, svg {
   color: #66ccff;
 }
 .page-colors .border_colors {
-  margin: 16px 16px 16px 16px;
+  padding: 16px 16px 16px 16px;
 }
 .page-colors .border_colors .color-border {
   width: 250px;
@@ -177,7 +181,7 @@ button, a, svg {
 }
 .page-colors .links a {
   color: #6b8df0;
-  margin: 16px 16px 16px 16px;
+  padding: 16px 16px 16px 16px;
 }
 .page-colors .links a:hover {
   color: #253d73;
@@ -192,7 +196,7 @@ button, a, svg {
   color: #181a1f;
 }
 .page-typography h1, .page-typography h2 {
-  margin: 16px 16px 16px 16px;
+  padding: 16px 16px 16px 16px;
 }
 .page-typography .font_families {
   display: flex;
@@ -226,7 +230,7 @@ button, a, svg {
 }
 .page-typography .font_sizes .font-size {
   color: #3e6ae1;
-  margin: 8px 8px 8px 8px;
+  padding: 8px 8px 8px 8px;
 }
 .page-typography .font_sizes .font-size-xs {
   font-size: 0.8333333333rem;
@@ -254,7 +258,7 @@ button, a, svg {
 }
 .page-typography .font_weights .font-weight {
   color: #3e6ae1;
-  margin: 8px 8px 8px 8px;
+  padding: 8px 8px 8px 8px;
   font-size: 1.728rem;
 }
 .page-typography .font_weights .font-weight-regular {
@@ -277,7 +281,7 @@ button, a, svg {
 }
 .page-typography .font_heights .font-height {
   color: #3e6ae1;
-  margin: 8px 8px 8px 8px;
+  padding: 8px 8px 8px 8px;
   font-size: 1.728rem;
   outline: 1px solid #929292;
 }
@@ -300,7 +304,7 @@ button, a, svg {
 }
 .page-typography .links a {
   color: #6b8df0;
-  margin: 8px 8px 8px 8px;
+  padding: 8px 8px 8px 8px;
 }
 .page-typography .links a:hover {
   color: #253d73;
@@ -346,7 +350,7 @@ button, a, svg {
 .page-index main a {
   font-size: 1.44rem;
   color: #6b8df0;
-  margin: 6px 4px;
+  padding: 6px 4px;
 }
 .page-index main a:hover {
   color: #253d73;

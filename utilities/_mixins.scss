@@ -1,6 +1,70 @@
+@use '../tokens/index' as *;
+
 // === Utilities: MIXINS ========
 
-/*--- SPACING MIXIN ---*/
-@mixin spacing($property, $value) {
-  #{$property}: $value;
+/*--- SPACE PADDING (square, squish, stretch) ---*/
+@mixin space-padding($type) {
+  $value: map-get($space-inset-map, $type);
+  padding: $value;
+  // @include space-padding("square-sm");
+  // @include space-padding("squish-md");
+  // @include space-padding("stretch-lg");
+}
+
+/*--- SPACE MARGIN (stack, inline) ---*/
+@mixin space-margin($type) {
+  $value: map-get($space-margin-map, $type);
+  margin: $value;
+  // @include space-margin("stack-md");
+  // @include space-margin("inline-lg");
+}
+
+/*--- SPACE PADDING CUSTOM ---*/
+@mixin space-padding-custom($direction, $size) {
+  $spacing-map: (
+    xs: $space-xs,
+    sm: $space-sm,
+    md: $space-md,
+    lg: $space-lg,
+    xl: $space-xl,
+    xxl: $space-xxl,
+  );
+
+  $value: map-get($spacing-map, $size);
+
+  @if $direction == top {
+    padding-top: $value;
+  } @else if $direction == bottom {
+    padding-bottom: $value;
+  } @else if $direction == left {
+    padding-left: $value;
+  } @else if $direction == right {
+    padding-right: $value;
+  }
+  // @include space-padding-custom(top, md);
+}
+
+/*--- SPACE MARGIN CUSTOM ---*/
+@mixin space-margin-custom($direction, $size) {
+  $spacing-map: (
+    xs: $space-xs,
+    sm: $space-sm,
+    md: $space-md,
+    lg: $space-lg,
+    xl: $space-xl,
+    xxl: $space-xxl,
+  );
+
+  $value: map-get($spacing-map, $size);
+
+  @if $direction == top {
+    margin-top: $value;
+  } @else if $direction == bottom {
+    margin-bottom: $value;
+  } @else if $direction == left {
+    margin-left: $value;
+  } @else if $direction == right {
+    margin-right: $value;
+  }
+  // @include space-margin-custom(right, sm);
 }

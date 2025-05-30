@@ -46,7 +46,7 @@
     a {
       font-size: $font-size-lg;
       color: $color-text-link;
-      @include spacing('margin', $stretch-sm);
+      @include space-padding(stretch-sm);
     }
 
     a:hover {
