@@ -76,6 +76,10 @@ margin-top      |     margin      |     top
 margin-left     |     margin      |     left
 
 */
+/*--- BORDER-WIDTH ---*/
+/*--- BORDER-STYLE ---*/
+/*--- BORDER-COLOR MAP ---*/
+/*--- BORDER-RADIUS ---*/
 /*--- FONT-FACE ---*/
 @font-face {
   src: url("../assets/fonts/font_NewYork/NewYork.ttf");
@@ -87,6 +91,8 @@ margin-left     |     margin      |     left
 }
 /*--- SPACING (PADDING) ---*/
 /*--- SPACING (MARGIN) ---*/
+/*--- BORDER MIXINS ---*/
+/*--- BORDER-RADIUS MIXINS ---*/
 .page-colors {
   display: flex;
   flex-direction: column;
@@ -473,6 +479,12 @@ margin-left     |     margin      |     left
   color: #253d73;
 }
 
+.page-borders h1 {
+  border-width: 2px;
+  border-color: #181a1f;
+  border-style: solid;
+  border-radius: 16px;
+}
 .page-borders .links {
   display: flex;
   justify-content: center;

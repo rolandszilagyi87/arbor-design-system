@@ -1,0 +1,29 @@
+@use './colors' as *;
+
+// === Tokens: RAW COLORS ========
+
+/*--- BORDER-WIDTH ---*/
+$border-width-none: 0;
+$border-width-thin: 1px;
+$border-width-regular: 2px;
+$border-width-bold: 4px;
+
+/*--- BORDER-STYLE ---*/
+$border-style-solid: solid;
+
+/*--- BORDER-COLOR MAP ---*/
+$border-colors: (
+  light: $color-border-light,
+  medium: $color-border-medium,
+  semidark: $color-border-semidark,
+  dark: $color-border-dark
+);
+
+/*--- BORDER-RADIUS ---*/
+$border-radius: (
+  none: 0,
+  sm: 4px,
+  md: 8px,
+  lg: 16px,
+  full: 1000px
+);

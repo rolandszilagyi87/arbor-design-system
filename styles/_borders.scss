@@ -4,8 +4,10 @@
 .page-borders {
 
 
-
-
+  h1 {
+    @include border-regular(dark);
+    @include border-radius(lg);  
+  }
 
 
 

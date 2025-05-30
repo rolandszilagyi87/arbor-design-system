@@ -118,3 +118,39 @@
 
 // @include inset-square(md);
 // @include margin-stack(sm);
+
+/*--- BORDER MIXINS ---*/
+@mixin border-thin($color-name) {
+  @if map-has-key($border-colors, $color-name) {
+    border-width: $border-width-thin;
+    border-color: map-get($border-colors, $color-name);
+    border-style: $border-style-solid;
+  }
+}
+
+@mixin border-regular($color-name) {
+  @if map-has-key($border-colors, $color-name) {
+    border-width: $border-width-regular;
+    border-color: map-get($border-colors, $color-name);
+    border-style: $border-style-solid;
+  }
+}
+
+@mixin border-bold($color-name) {
+  @if map-has-key($border-colors, $color-name) {
+    border-width: $border-width-bold;
+    border-color: map-get($border-colors, $color-name);
+    border-style: $border-style-solid;
+  }
+}
+  // @include border-regular(semidark);
+  // @include border-regular(light);
+
+/*--- BORDER-RADIUS MIXINS ---*/
+@mixin border-radius($size) {
+  @if map-has-key($border-radius, $size) {
+    border-radius: map-get($border-radius, $size);
+  }
+}
+  // @include border-radius(lg);
+  // @include border-radius(sm);
