@@ -56,8 +56,9 @@
   );
 
   $value: map-get($spacing-map, $size);
-
-  @if $direction == top {
+  @if $direction == all {
+    margin: $value;
+  } @else if $direction == top {
     margin-top: $value;
   } @else if $direction == bottom {
     margin-bottom: $value;

@@ -310,6 +310,135 @@ button, a, svg {
   color: #253d73;
 }
 
+.page-spacing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+.page-spacing h1, .page-spacing h2 {
+  padding: 16px 16px 16px 16px;
+}
+.page-spacing .items_cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: #3e6ae1;
+}
+.page-spacing .square-base {
+  display: grid;
+  place-items: center;
+  width: 175px;
+  height: 175px;
+  border-color: #5dbf6e;
+  border-style: solid;
+  margin: 16px;
+}
+.page-spacing .square-xs {
+  border-width: 4px 4px 4px 4px;
+}
+.page-spacing .square-sm {
+  border-width: 8px 8px 8px 8px;
+}
+.page-spacing .square-md {
+  border-width: 16px 16px 16px 16px;
+}
+.page-spacing .square-lg {
+  border-width: 32px 32px 32px 32px;
+}
+.page-spacing .square-xl {
+  border-width: 64px 64px 64px 64px;
+}
+.page-spacing .squish-base {
+  display: grid;
+  place-items: center;
+  width: 130px;
+  height: 70px;
+  border-color: #ffcc66;
+  border-style: solid;
+  margin: 16px;
+}
+.page-spacing .squish-sm {
+  border-width: 4px 8px;
+}
+.page-spacing .squish-md {
+  border-width: 8px 16px;
+}
+.page-spacing .squish-lg {
+  border-width: 16px 32px;
+}
+.page-spacing .stretch-base {
+  display: grid;
+  place-items: center;
+  width: 130px;
+  height: 70px;
+  border-color: #66ccff;
+  border-style: solid;
+  margin: 16px;
+}
+.page-spacing .stretch-sm {
+  border-width: 6px 4px;
+}
+.page-spacing .stretch-md {
+  border-width: 12px 8px;
+}
+.page-spacing .stretch-lg {
+  border-width: 24px 16px;
+}
+.page-spacing .stack-base {
+  display: grid;
+  place-items: center;
+  width: 200px;
+  border-color: #ff6666;
+  border-style: solid;
+  margin: 16px;
+}
+.page-spacing .stack-xs {
+  border-width: 0 0 2px 0;
+}
+.page-spacing .stack-sm {
+  border-width: 0 0 4px 0;
+}
+.page-spacing .stack-md {
+  border-width: 0 0 8px 0;
+}
+.page-spacing .stack-lg {
+  border-width: 0 0 16px 0;
+}
+.page-spacing .stack-xl {
+  border-width: 0 0 32px 0;
+}
+.page-spacing .stack-xxl {
+  border-width: 0 0 64px 0;
+}
+.page-spacing .inline-base {
+  display: grid;
+  place-items: center;
+  height: 200px;
+  border-color: #3e6ae1;
+  border-style: solid;
+  margin: 16px;
+}
+.page-spacing .inline-xs {
+  border-width: 0 2px 0 0;
+}
+.page-spacing .inline-sm {
+  border-width: 0 4px 0 0;
+}
+.page-spacing .inline-md {
+  border-width: 0 8px 0 0;
+}
+.page-spacing .inline-lg {
+  border-width: 0 16px 0 0;
+}
+.page-spacing .inline-xl {
+  border-width: 0 32px 0 0;
+}
+.page-spacing .inline-xxl {
+  border-width: 0 32px 0 0;
+}
+
 .page-index {
   display: flex;
   flex-direction: column;
