@@ -1,3 +1,6 @@
+@charset "UTF-8";
+/* ========== [BASE INDEX] ✅ ========== */
+/* ========== [BASE: CSS RESET] ✅ ========== */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -36,50 +39,41 @@ button, a, svg {
   text-decoration: none;
 }
 
+/* ========== [TOKENS INDEX] ✅ ========== */
+/* ========== [RAW COLORS] ✅ ========== */
 /*--- PRIMARY COLORS ---*/
 /*--- SECONDARY COLORS ---*/
+/* ========== [TOKENIZED COLORS] ✅ ========== */
 /*--- BRAND COLORS ---*/
 /*--- BACKGROUND COLORS ---*/
 /*--- TEXT COLORS ---*/
 /*--- STATE COLORS ---*/
 /*--- BORDER COLORS ---*/
+/* ========== [TYPOGRAPHY] ✅ ========== */
 /*--- FONT SCALE ---*/
 /*--- FONT-FAMILY ---*/
 /*--- FONT-SIZE ---*/
 /*--- FONT-WEIGHT ---*/
 /*--- LINE-HEIGHT ---*/
+/* ========== [SPACING VALUES] ✅ ========== */
 /*--- SPACING SCALE ---*/
 /*--- SPACING TOKENS ---*/
-/*--- SPACING CONCEPTIONS ---*/
-/*
-
-inset-square    |     padding     |     minden oldalon azonos
-inset-stack     |     padding     |     bottom
-inset-inline    |     padding     |     right
-
-inset-squish    |     padding     |     x:y - 2:1
-inset-stretch   |     padding     |     x:y - 1:2
-
-inset-top       |     padding     |     top
-inset-left      |     padding     |     left
-
--------------------------------------------------------------
-
-margin-square   |     margin      |     minden oldalon azonos
-margin-stack    |     margin      |     bottom
-margin-inline   |     margin      |     right
-
-margin-squish   |     margin      |     x:y - 2:1
-margin-stretch  |     margin      |     x:y - 1:2
-
-margin-top      |     margin      |     top
-margin-left     |     margin      |     left
-
-*/
+/* ========== [SPACING CONCEPTIONS] ✅ ========== */
+/*--- SQUARE ---*/
+/*--- STACK ---*/
+/*--- INLINE ---*/
+/*--- SQUISH ---*/
+/*--- STRETCH ---*/
+/* ========== [BOX-SHADOW] ========== */
+/* ========== [ELEVATION VARIABLES] ✅ ========== */
+/* ========== [TOKENS INDEX] ✅ ========== */
+/* ========== [BORDER VALUES] ✅ ========== */
 /*--- BORDER-WIDTH ---*/
 /*--- BORDER-STYLE ---*/
-/*--- BORDER-COLOR MAP ---*/
-/*--- BORDER-RADIUS ---*/
+/*--- BORDER-COLOR MAP 🗺️ ---*/
+/*--- BORDER-RADIUS MAP 🗺️ ---*/
+/* ========== [UTILITIES INDEX] ✅ ========== */
+/* ========== [FONT HELPERS] ✅ ========== */
 /*--- FONT-FACE ---*/
 @font-face {
   src: url("../assets/fonts/font_NewYork/NewYork.ttf");
@@ -89,10 +83,11 @@ margin-left     |     margin      |     left
   src: url("../assets/fonts/font_SFPro/SF-Pro.ttf");
   font-family: "SFPro";
 }
-/*--- SPACING (PADDING) ---*/
-/*--- SPACING (MARGIN) ---*/
-/*--- BORDER MIXINS ---*/
-/*--- BORDER-RADIUS MIXINS ---*/
+/* ========== [SPACING: PADDING] 🗺️ ✅ ========== */
+/* ========== [SPACING: MARGIN] 🗺️ ✅ ========== */
+/* ========== [BORDER-BASE MIXIN] 🗺️ ✅ ========== */
+/* ========== [BORDER-RADIUS MIXIN] 🗺️ ✅ ========== */
+/* ========== [ELEVATIONS] ✅ ========== */
 .page-colors {
   display: flex;
   flex-direction: column;
@@ -480,10 +475,10 @@ margin-left     |     margin      |     left
 }
 
 .page-borders h1 {
-  border-width: 2px;
+  border-width: 1px;
   border-color: #181a1f;
   border-style: solid;
-  border-radius: 16px;
+  border-radius: 4px;
 }
 .page-borders .links {
   display: flex;
@@ -520,6 +515,12 @@ margin-left     |     margin      |     left
 .page-index header p {
   font-family: "SFPro";
   color: #181a1f;
+  background-color: #f4f4f4;
+  border-width: 1px;
+  border-color: #f4f4f4;
+  border-style: solid;
+  padding: 8px 16px;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.14), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 1px 8px rgba(0, 0, 0, 0.2);
 }
 .page-index main {
   display: flex;
@@ -527,7 +528,12 @@ margin-left     |     margin      |     left
   align-items: center;
   width: 85vw;
   height: 50vh;
-  outline: 1px solid #929292;
+  background-color: #f4f4f4;
+  border-width: 1px;
+  border-color: #f4f4f4;
+  border-style: solid;
+  border-radius: 4px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.14), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 5px rgba(0, 0, 0, 0.2);
 }
 .page-index main div {
   display: flex;
@@ -544,12 +550,19 @@ margin-left     |     margin      |     left
   color: #253d73;
 }
 .page-index footer {
-  height: 15vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #f4f4f4;
+  margin: 32px 32px 32px 32px;
+  padding: 8px 16px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+  border-width: 1px;
+  border-color: #f4f4f4;
+  border-style: solid;
+  border-radius: 4px;
 }
 .page-index footer p {
   font-family: "SFPro";
-  font-weight: 500;
+  font-weight: 300;
 }/*# sourceMappingURL=main.css.map */

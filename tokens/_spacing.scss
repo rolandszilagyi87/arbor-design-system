@@ -1,4 +1,4 @@
-// === Tokens: SPACING ========
+/* ========== [SPACING VALUES] ✅ ========== */
 
 /*--- SPACING SCALE ---*/
 $spacing-scale: 2;
@@ -12,62 +12,37 @@ $space-lg: calc($space-md * $spacing-scale);      // 16px
 $space-xl: calc($space-lg * $spacing-scale);      // 32px
 $space-xxl: calc($space-xl * $spacing-scale);     // 64px
 
-/*--- SPACING CONCEPTIONS ---*/
-// SQUARE
-$space-square-xs: ($space-sm $space-sm $space-sm $space-sm);      // 4px
-$space-square-sm: ($space-md $space-md $space-md $space-md);      // 8px
-$space-square-md: ($space-lg $space-lg $space-lg $space-lg);      // 16px
-$space-square-lg: ($space-xl $space-xl $space-xl $space-xl);      // 32px
-$space-square-xl: ($space-xxl $space-xxl $space-xxl $space-xxl);  // 64px
+/* ========== [SPACING CONCEPTIONS] ✅ ========== */
 
-// STACK
-$space-stack-xs: (0 0 $base-spacing 0);    // 2px
-$space-stack-sm: (0 0 $space-sm 0);        // 4px
-$space-stack-md: (0 0 $space-md 0 );       // 8px
-$space-stack-lg: (0 0 $space-lg 0 );       // 16px
-$space-stack-xl: (0 0 $space-xl 0 );       // 32px
-$space-stack-xxl: (0 0 $space-xxl 0 );     // 64px
+/*--- SQUARE ---*/
+$space-square-xs: ($space-sm $space-sm $space-sm $space-sm);
+$space-square-sm: ($space-md $space-md $space-md $space-md);
+$space-square-md: ($space-lg $space-lg $space-lg $space-lg);
+$space-square-lg: ($space-xl $space-xl $space-xl $space-xl);
+$space-square-xl: ($space-xxl $space-xxl $space-xxl $space-xxl);
 
-// INLINE
-$space-inline-xs: (0 $base-spacing 0 0);  // 2px
-$space-inline-sm: (0 $space-sm 0 0);      // 4px
-$space-inline-md: (0 $space-md 0 0);      // 8px
-$space-inline-lg: (0 $space-lg 0 0);      // 16px
-$space-inline-xl: (0 $space-xl 0 0);      // 32px
-$space-inline-xxl: (0 $space-xl 0 0);     // 64px
+/*--- STACK ---*/
+$space-stack-xs: (0 0 $base-spacing 0);
+$space-stack-sm: (0 0 $space-sm 0);
+$space-stack-md: (0 0 $space-md 0 );
+$space-stack-lg: (0 0 $space-lg 0 );
+$space-stack-xl: (0 0 $space-xl 0 );
+$space-stack-xxl: (0 0 $space-xxl 0 );
 
-// SQUISH
-$space-squish-sm: ($space-sm calc($space-sm * 2));   // 4px 8px
-$space-squish-md: ($space-md calc($space-md * 2));   // 8px 16px
-$space-squish-lg: ($space-lg calc($space-lg * 2));   // 16px 32px
+/*--- INLINE ---*/
+$space-inline-xs: (0 $base-spacing 0 0);
+$space-inline-sm: (0 $space-sm 0 0);
+$space-inline-md: (0 $space-md 0 0);
+$space-inline-lg: (0 $space-lg 0 0);
+$space-inline-xl: (0 $space-xl 0 0);
+$space-inline-xxl: (0 $space-xl 0 0);
 
-// STRETCH
-$space-stretch-sm: (calc($space-sm * 1.5) $space-sm);   // 6px 4px
-$space-stretch-md: (calc($space-md * 1.5) $space-md);   // 12px 8px
-$space-stretch-lg: (calc($space-lg * 1.5) $space-lg);   // 16px 24px
+/*--- SQUISH ---*/
+$space-squish-sm: ($space-sm calc($space-sm * 2));
+$space-squish-md: ($space-md calc($space-md * 2));
+$space-squish-lg: ($space-lg calc($space-lg * 2));
 
-/*
-
-inset-square    |     padding     |     minden oldalon azonos
-inset-stack     |     padding     |     bottom
-inset-inline    |     padding     |     right
-
-inset-squish    |     padding     |     x:y - 2:1
-inset-stretch   |     padding     |     x:y - 1:2
-
-inset-top       |     padding     |     top
-inset-left      |     padding     |     left
-
--------------------------------------------------------------
-
-margin-square   |     margin      |     minden oldalon azonos
-margin-stack    |     margin      |     bottom
-margin-inline   |     margin      |     right
-
-margin-squish   |     margin      |     x:y - 2:1
-margin-stretch  |     margin      |     x:y - 1:2
-
-margin-top      |     margin      |     top
-margin-left     |     margin      |     left
-
-*/
+/*--- STRETCH ---*/
+$space-stretch-sm: (calc($space-sm * 1.5) $space-sm);
+$space-stretch-md: (calc($space-md * 1.5) $space-md);
+$space-stretch-lg: (calc($space-lg * 1.5) $space-lg);

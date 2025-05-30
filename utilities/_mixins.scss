@@ -1,8 +1,7 @@
 @use '../tokens/index' as *;
 
-// === Utilities: MIXINS ========
+/* ========== [SPACING: PADDING] 🗺️ ✅ ========== */
 
-/*--- SPACING (PADDING) ---*/
 @mixin inset-square($size) {
   padding: map-get((
     xs: $space-square-xs,
@@ -59,7 +58,10 @@
   padding-left: $value;
 }
 
-/*--- SPACING (MARGIN) ---*/
+// @include inset-square(md);
+
+/* ========== [SPACING: MARGIN] 🗺️ ✅ ========== */
+
 @mixin margin-square($size) {
   margin: map-get((
     xs: $space-square-xs,
@@ -116,10 +118,10 @@
   margin-left: $value;
 }
 
-// @include inset-square(md);
 // @include margin-stack(sm);
 
-/*--- BORDER MIXINS ---*/
+/* ========== [BORDER-BASE MIXIN] 🗺️ ✅ ========== */
+
 @mixin border-thin($color-name) {
   @if map-has-key($border-colors, $color-name) {
     border-width: $border-width-thin;
@@ -143,14 +145,37 @@
     border-style: $border-style-solid;
   }
 }
-  // @include border-regular(semidark);
-  // @include border-regular(light);
 
-/*--- BORDER-RADIUS MIXINS ---*/
+// @include border-regular(semidark);
+
+/* ========== [BORDER-RADIUS MIXIN] 🗺️ ✅ ========== */
+
 @mixin border-radius($size) {
   @if map-has-key($border-radius, $size) {
     border-radius: map-get($border-radius, $size);
   }
 }
-  // @include border-radius(lg);
-  // @include border-radius(sm);
+
+// @include border-radius(sm);
+
+/* ========== [ELEVATIONS] ✅ ========== */
+
+@mixin elevation($level) {
+  @if $level == 0 {
+    box-shadow: $elevation-none;
+  } @else if $level == 1 {
+    box-shadow: $elevation-sm;
+  } @else if $level == 2 {
+    box-shadow: $elevation-md;
+  } @else if $level == 3 {
+    box-shadow: $elevation-lg;
+  } @else if $level == 4 {
+    box-shadow: $elevation-xl;
+  } @else if $level == 5 {
+    box-shadow: $elevation-xxl;
+  } @else {
+    box-shadow: none;
+  }
+}
+
+// @include elevation(3);

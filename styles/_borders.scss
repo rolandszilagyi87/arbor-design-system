@@ -5,8 +5,8 @@
 
 
   h1 {
-    @include border-regular(dark);
-    @include border-radius(lg);  
+    @include border-thin(dark);
+    @include border-radius(sm);  
   }
 
 

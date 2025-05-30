@@ -25,6 +25,11 @@
     p {
       font-family: $font-secondary;
       color: $color-text-dark;
+      background-color: $color-bg-medium;
+      @include border-thin(medium);
+      @include border-radius(xs);
+      @include inset-squish(md);
+      @include elevation(3);
     }
   }
 
@@ -34,7 +39,11 @@
     align-items: center;
     width: 85vw;
     height: 50vh;
-    outline: 1px solid $color-border-semidark;
+    background-color: $color-bg-medium;
+    @include border-thin(medium);
+    @include border-radius(sm);
+    @include elevation(2);
+
 
     div {
       display: flex;
@@ -55,14 +64,19 @@
   }
 
   footer {
-    height: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: $color-bg-medium;
+    @include margin-square(lg);
+    @include inset-squish(md);
+    @include elevation(1);
+    @include border-thin(medium);
+    @include border-radius(sm);
 
     p {
       font-family: $font-secondary;
-      font-weight: $font-weight-medium;
+      font-weight: $font-weight-regular;
     }
   }
 }

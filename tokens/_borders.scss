@@ -1,6 +1,6 @@
 @use './colors' as *;
 
-// === Tokens: RAW COLORS ========
+/* ========== [BORDER VALUES] ✅ ========== */
 
 /*--- BORDER-WIDTH ---*/
 $border-width-none: 0;
@@ -11,7 +11,7 @@ $border-width-bold: 4px;
 /*--- BORDER-STYLE ---*/
 $border-style-solid: solid;
 
-/*--- BORDER-COLOR MAP ---*/
+/*--- BORDER-COLOR MAP 🗺️ ---*/
 $border-colors: (
   light: $color-border-light,
   medium: $color-border-medium,
@@ -19,7 +19,7 @@ $border-colors: (
   dark: $color-border-dark
 );
 
-/*--- BORDER-RADIUS ---*/
+/*--- BORDER-RADIUS MAP 🗺️ ---*/
 $border-radius: (
   none: 0,
   sm: 4px,
