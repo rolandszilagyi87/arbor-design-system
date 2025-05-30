@@ -1,0 +1,26 @@
+@use '../tokens/index' as *;
+@use '../utilities/index' as *;
+
+.page-borders {
+
+
+
+
+
+
+
+  .links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    a {
+    color: $color-text-link;
+    @include inset-square(md);
+    }
+
+    a:hover {
+      color: $color-text-link-hover;
+    }
+  }
+}

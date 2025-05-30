@@ -460,6 +460,31 @@ margin-left     |     margin      |     left
 .page-spacing .inline-xxl {
   border-width: 0 32px 0 0;
 }
+.page-spacing .links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.page-spacing .links a {
+  color: #6b8df0;
+  padding: 16px 16px 16px 16px;
+}
+.page-spacing .links a:hover {
+  color: #253d73;
+}
+
+.page-borders .links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.page-borders .links a {
+  color: #6b8df0;
+  padding: 16px 16px 16px 16px;
+}
+.page-borders .links a:hover {
+  color: #253d73;
+}
 
 .page-index {
   display: flex;
