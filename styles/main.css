@@ -40,11 +40,11 @@ button, a, svg {
 }
 
 /* ========== [TOKENS INDEX] ========== */
-/* ========== [ BASE COLORS ] ========== */
+/* ========== [BASE COLORS] ========== */
 /* --- BRAND COLORS --- */
 /* --- NEUTRAL COLORS --- */
 /* --- STATE COLORS --- */
-/* ========== [ SEMANTIC COLORS ] ========== */
+/* ========== [SEMANTIC COLORS] ========== */
 /* --- BRAND COLORS --- */
 /* --- BACKGROUND COLORS --- */
 /* --- TEXT COLORS --- */
@@ -68,11 +68,11 @@ button, a, svg {
 /* ========== [BOX-SHADOW] ========== */
 /* ========== [ELEVATION LEVELS] ========== */
 /* ========== [TOKENS INDEX] ========== */
-/* ========== [BORDER VALUES] ========== */
-/*--- BORDER-WIDTH ---*/
-/*--- BORDER-STYLE ---*/
-/*--- BORDER-COLOR MAP 🗺️ ---*/
-/*--- BORDER-RADIUS MAP 🗺️ ---*/
+/* ========== [BORDER TOKENS] ========== */
+/* --- BORDER-WIDTH --- */
+/* --- BORDER-RADIUS --- */
+/* --- BORDER-COLOR --- */
+/* --- BORDER-STYLE --- */
 /* ========== [UTILITIES INDEX] ========== */
 /* ========== [FONT HELPERS] ✅ ========== */
 /*--- FONT-FACE ---*/
@@ -86,8 +86,6 @@ button, a, svg {
 }
 /* ========== [SPACING: PADDING] 🗺️ ✅ ========== */
 /* ========== [SPACING: MARGIN] 🗺️ ✅ ========== */
-/* ========== [BORDER-BASE MIXIN] 🗺️ ✅ ========== */
-/* ========== [BORDER-RADIUS MIXIN] 🗺️ ✅ ========== */
 /* ========== [ELEVATIONS] ✅ ========== */
 /* ========== [LAYOUTS INDEX] ========== */
 /* ========== _containers.scss ========== */
@@ -492,94 +490,110 @@ button, a, svg {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* --- border-width --- */
+  /* --- border-radius --- */
+  /* --- border-color --- */
 }
-.page-borders .border_base {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.page-borders h1 {
+  color: #0582ca;
 }
-.page-borders .border-width1 {
+.page-borders .width1 {
+  width: 200px;
+  height: 200px;
+  margin: 1rem;
   border-width: 1px;
-  border-color: #dddddd;
   border-style: solid;
-  border-radius: 0;
+  border-color: #0582ca;
 }
-.page-borders .border-width2 {
+.page-borders .width2 {
+  width: 200px;
+  height: 200px;
+  margin: 1rem;
   border-width: 2px;
-  border-color: #dddddd;
   border-style: solid;
-  border-radius: 0;
+  border-color: #0582ca;
 }
-.page-borders .border-width3 {
+.page-borders .width3 {
+  width: 200px;
+  height: 200px;
+  margin: 1rem;
   border-width: 4px;
-  border-color: #dddddd;
   border-style: solid;
-  border-radius: 0;
+  border-color: #0582ca;
 }
-.page-borders .border-color1 {
+.page-borders .radius1 {
+  width: 200px;
+  height: 200px;
+  margin: 1rem;
   border-width: 2px;
-  border-color: #ffffff;
   border-style: solid;
-}
-.page-borders .border-color2 {
-  border-width: 2px;
-  border-color: #ebebeb;
-  border-style: solid;
-}
-.page-borders .border-color3 {
-  border-width: 2px;
-  border-color: #dddddd;
-  border-style: solid;
-}
-.page-borders .border-color4 {
-  border-width: 2px;
-  border-color: #181a1f;
-  border-style: solid;
-}
-.page-borders .border-radius1 {
-  border-width: 2px;
-  border-color: #dddddd;
-  border-style: solid;
-}
-.page-borders .border-radius2 {
-  border-width: 2px;
-  border-color: #dddddd;
-  border-style: solid;
+  border-color: #0582ca;
   border-radius: 4px;
 }
-.page-borders .border-radius3 {
+.page-borders .radius2 {
+  width: 200px;
+  height: 200px;
+  margin: 1rem;
   border-width: 2px;
-  border-color: #dddddd;
   border-style: solid;
+  border-color: #0582ca;
   border-radius: 8px;
 }
-.page-borders .border-radius4 {
+.page-borders .radius3 {
+  width: 200px;
+  height: 200px;
+  margin: 1rem;
   border-width: 2px;
-  border-color: #dddddd;
   border-style: solid;
+  border-color: #0582ca;
   border-radius: 16px;
 }
-.page-borders .border-radius5 {
+.page-borders .radius4 {
+  width: 200px;
+  height: 200px;
+  margin: 1rem;
   border-width: 2px;
-  border-color: #dddddd;
   border-style: solid;
+  border-color: #0582ca;
   border-radius: 1000px;
 }
-.page-borders .box {
-  width: 7rem;
-  height: 7rem;
-  text-align: center;
-  margin: 8px 8px 8px 8px;
+.page-borders .color1 {
+  width: 200px;
+  height: 200px;
+  margin: 1rem;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #ffffff;
 }
-.page-borders .links {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+.page-borders .color2 {
+  width: 200px;
+  height: 200px;
+  margin: 1rem;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #ebebeb;
 }
-.page-borders .links a {
-  color: #00a6fb;
-  padding: 16px 16px 16px 16px;
+.page-borders .color3 {
+  width: 200px;
+  height: 200px;
+  margin: 1rem;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #dddddd;
 }
-.page-borders .links a:hover {
-  color: #006494;
+.page-borders .color4 {
+  width: 200px;
+  height: 200px;
+  margin: 1rem;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #181a1f;
+}
+.page-borders .color5 {
+  width: 200px;
+  height: 200px;
+  margin: 1rem;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #0582ca;
 }/*# sourceMappingURL=main.css.map */

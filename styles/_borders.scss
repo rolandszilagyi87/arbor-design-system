@@ -1,5 +1,4 @@
 @use '../tokens/index' as *;
-@use '../utilities/index' as *;
 
 .page-borders {
   display: flex;
@@ -7,91 +6,125 @@
   justify-content: center;
   align-items: center;
 
-  h1 { 
+  h1 {
+    color: $color-primary;
   }
 
-  .border_base {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  /* --- border-width --- */
+
+  .width1 {
+    width: 200px;
+    height: 200px;
+    margin: 1rem;
+    border-width: $border-width-thin;
+    border-style: $border-style-solid;
+    border-color: $border-color-primary;
   }
 
-  .border-width1 {
-    @include border-thin(semidark);
-    @include border-radius(none);
+  .width2 {
+    width: 200px;
+    height: 200px;
+    margin: 1rem;
+    border-width: $border-width-regular;
+    border-style: $border-style-solid;
+    border-color: $border-color-primary;
   }
 
-  .border-width2 {
-    @include border-regular(semidark);
-    @include border-radius(none);
+  .width3 {
+    width: 200px;
+    height: 200px;
+    margin: 1rem;
+    border-width: $border-width-bold;
+    border-style: $border-style-solid;
+    border-color: $border-color-primary;
   }
 
-  .border-width3 {
-    @include border-bold(semidark);
-    @include border-radius(none);
+  /* --- border-radius --- */
+
+  .radius1 {
+    width: 200px;
+    height: 200px;
+    margin: 1rem;
+    border-width: $border-width-regular;
+    border-style: $border-style-solid;
+    border-color: $border-color-primary;
+    border-radius: $border-radius-sm;
   }
 
-
-  .border-color1 {
-    @include border-regular(light);
+  .radius2 {
+    width: 200px;
+    height: 200px;
+    margin: 1rem;
+    border-width: $border-width-regular;
+    border-style: $border-style-solid;
+    border-color: $border-color-primary;
+    border-radius: $border-radius-md;
   }
 
-  .border-color2 {
-    @include border-regular(medium);
+  .radius3 {
+    width: 200px;
+    height: 200px;
+    margin: 1rem;
+    border-width: $border-width-regular;
+    border-style: $border-style-solid;
+    border-color: $border-color-primary;
+    border-radius: $border-radius-lg;
   }
 
-  .border-color3 {
-    @include border-regular(semidark);
+  .radius4 {
+    width: 200px;
+    height: 200px;
+    margin: 1rem;
+    border-width: $border-width-regular;
+    border-style: $border-style-solid;
+    border-color: $border-color-primary;
+    border-radius: $border-radius-full;
   }
 
-  .border-color4 {
-    @include border-regular(dark);
+  /* --- border-color --- */
+
+  .color1 {
+    width: 200px;
+    height: 200px;
+    margin: 1rem;
+    border-width: $border-width-regular;
+    border-style: $border-style-solid;
+    border-color: $border-color-light;
   }
 
-  .border-radius1 {
-    @include border-regular(semidark);
+  .color2 {
+    width: 200px;
+    height: 200px;
+    margin: 1rem;
+    border-width: $border-width-regular;
+    border-style: $border-style-solid;
+    border-color: $border-color-medium;
   }
 
-  .border-radius2 {
-    @include border-regular(semidark);
-    @include border-radius(sm);
+  .color3 {
+    width: 200px;
+    height: 200px;
+    margin: 1rem;
+    border-width: $border-width-regular;
+    border-style: $border-style-solid;
+    border-color: $border-color-semidark;
   }
 
-  .border-radius3 {
-    @include border-regular(semidark);
-    @include border-radius(md);
+  .color4 {
+    width: 200px;
+    height: 200px;
+    margin: 1rem;
+    border-width: $border-width-regular;
+    border-style: $border-style-solid;
+    border-color: $border-color-dark;
   }
 
-  .border-radius4 {
-    @include border-regular(semidark);
-    @include border-radius(lg);
-  }
-
-  .border-radius5 {
-    @include border-regular(semidark);
-    @include border-radius(full);
-  }
-
-  .box {
-    width: 7rem;
-    height: 7rem;
-    text-align: center;
-    // outline: 1px solid green;
-    @include margin-square(sm);
-  }
-
-  .links {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-
-    a {
-    color: $color-text-link;
-    @include inset-square(md);
-    }
-
-    a:hover {
-      color: $color-text-link-hover;
-    }
+  .color5 {
+    width: 200px;
+    height: 200px;
+    margin: 1rem;
+    border-width: $border-width-regular;
+    border-style: $border-style-solid;
+    border-color: $border-color-primary;
   }
 }

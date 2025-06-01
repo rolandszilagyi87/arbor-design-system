@@ -120,44 +120,6 @@
 
 // @include margin-stack(sm);
 
-/* ========== [BORDER-BASE MIXIN] 🗺️ ✅ ========== */
-
-@mixin border-thin($color-name) {
-  @if map-has-key($border-colors, $color-name) {
-    border-width: $border-width-thin;
-    border-color: map-get($border-colors, $color-name);
-    border-style: $border-style-solid;
-  }
-}
-
-@mixin border-regular($color-name) {
-  @if map-has-key($border-colors, $color-name) {
-    border-width: $border-width-regular;
-    border-color: map-get($border-colors, $color-name);
-    border-style: $border-style-solid;
-  }
-}
-
-@mixin border-bold($color-name) {
-  @if map-has-key($border-colors, $color-name) {
-    border-width: $border-width-bold;
-    border-color: map-get($border-colors, $color-name);
-    border-style: $border-style-solid;
-  }
-}
-
-// @include border-regular(semidark);
-
-/* ========== [BORDER-RADIUS MIXIN] 🗺️ ✅ ========== */
-
-@mixin border-radius($size) {
-  @if map-has-key($border-radius, $size) {
-    border-radius: map-get($border-radius, $size);
-  }
-}
-
-// @include border-radius(sm);
-
 /* ========== [ELEVATIONS] ✅ ========== */
 
 @mixin elevation($level) {

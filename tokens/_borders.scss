@@ -1,30 +1,26 @@
 @use './colors' as *;
 
-/* ========== [BORDER VALUES] ========== */
+/* ========== [BORDER TOKENS] ========== */
 
-/*--- BORDER-WIDTH ---*/
-$border-width-none: 0;
-$border-width-thin: 1px;
+/* --- BORDER-WIDTH --- */
+$border-width-none:    0;
+$border-width-thin:    1px;
 $border-width-regular: 2px;
-$border-width-bold: 4px;
+$border-width-bold:    4px;
 
-/*--- BORDER-STYLE ---*/
+/* --- BORDER-RADIUS --- */
+$border-radius-none: 0;
+$border-radius-sm:   4px;
+$border-radius-md:   8px;
+$border-radius-lg:   16px;
+$border-radius-full: 1000px;
+
+/* --- BORDER-COLOR --- */
+$border-color-light:    $color-border-light;
+$border-color-medium:   $color-border-medium;
+$border-color-semidark: $color-border-semidark;
+$border-color-dark:     $color-border-dark;
+$border-color-primary:  $color-primary;
+
+/* --- BORDER-STYLE --- */
 $border-style-solid: solid;
-
-/*--- BORDER-COLOR MAP 🗺️ ---*/
-$border-colors: (
-  light: $color-border-light,
-  medium: $color-border-medium,
-  semidark: $color-border-semidark,
-  dark: $color-border-dark,
-  color-primary: $color-primary
-);
-
-/*--- BORDER-RADIUS MAP 🗺️ ---*/
-$border-radius: (
-  none: 0,
-  sm: 4px,
-  md: 8px,
-  lg: 16px,
-  full: 1000px
-);
