@@ -6,147 +6,225 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: $color-bg-light;
 
-  h1, h2 {
-    @include inset-square(md);
+  h1 {
+    color: $color-primary;
   }
 
-  .brand_colors {
-    text-align: center;
-    @include inset-square(md);
-    
-    .color-primary {
-      color: $color-primary;
-      border: 1px solid $color-border-medium;
-    }
-
-    .color-secondary {
-      color: $color-secondary;
-      background-color: $color-bg-dark;
-    }
+  p {
+    font-size: 1.6rem;
+    font-weight: 900;
   }
 
-  .background_colors {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
-    width: 200px;
-    @include inset-square(md);
+  /* --- brand-colors --- */
 
-    .color-bg {
-      text-align: center;
-      height: 100px;
-    }
-
-    .color-bg-light {
-      background-color: $color-bg-light;
-      border: 1px solid $color-border-medium;
-    }
-
-    .color-bg-medium {
-      background-color: $color-bg-medium;
-      color: $color-text-dark;
-    }
-
-    .color-bg-semidark {
-      background-color: $color-bg-semidark;
-      color: $color-text-light;
-    }
-
-    .color-bg-dark {
-      background-color: $color-bg-dark;
-      color: $color-text-medium;
-    }
+  .primary-400 {
+    color: $color-primary-400;
   }
 
-  .text_colors {
-    @include inset-square(md);
-
-    .color-text-light {
-      color: $color-text-light;
-      background-color: $color-bg-dark;
-    }
-
-    .color-text-medium {
-      color: $color-text-medium;
-    }
-
-    .color-text-semidark {
-      color: $color-text-semidark;
-    }
-
-    .color-text-dark {
-      color: $color-text-dark;
-    }
-
-    .color-text-link {
-      color: $color-text-link;
-    }
-
-    .color-text-link-hover {
-      color: $color-text-link-hover;
-    }
+  .primary-500 {
+    color: $color-primary-500;
   }
 
-  .state_colors {
-    @include inset-square(md);
-
-    .color-state-success {
-      color: $color-state-success;
-    }
-    .color-state-warning {
-      color: $color-state-warning;
-    }
-    .color-state-error {
-      color: $color-state-error;
-    }
-    .color-state-info {
-      color: $color-state-info;
-    }
+  .primary-700 {
+    color: $color-primary-700;
   }
 
-  .border_colors {
-    @include inset-square(md);
-
-    .color-border {
-      width: 250px;
-      height: 100px;
-      margin: 1rem;
-    }
-
-    .color-border-light {
-      border: 1px solid $color-border-light;
-    }
-
-    .color-border-medium {
-      border: 1px solid $color-border-medium;
-      background-color: $color-bg-light;
-    }
-
-    .color-border-semidark {
-      border: 1px solid $color-border-semidark;
-      background-color: $color-bg-light;
-    }
-
-    .color-border-dark {
-      border: 1px solid $color-border-dark;
-    }
+  .primary-900 {
+    color: $color-primary-900;
   }
 
-  .links {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  .secondary-400 {
+    color: $color-secondary-400;
+  }
 
-    a {
+  .secondary-500 {
+    color: $color-secondary-500;
+  }
+
+  .secondary-700 {
+    color: $color-secondary-700;
+  }
+
+  .secondary-900 {
+    color: $color-secondary-900;
+  }
+
+  /* --- neutral-colors --- */
+
+  .neutral-100 {
+    color: $color-neutral-100;
+    background-color: $color-neutral-200;
+  }
+
+  .neutral-200 {
+    color: $color-neutral-200;
+  }
+
+  .neutral-800 {
+    color: $color-neutral-800;
+  }
+
+  .neutral-900 {
+    color: $color-neutral-900;
+  }
+
+  /* --- state-colors --- */
+
+  .success-400 {
+    color: $color-success-400;
+  }
+
+  .success-500 {
+    color: $color-success-500;
+  }
+
+  .success-700 {
+    color: $color-success-700;
+  }
+
+  .success-900 {
+    color: $color-success-900;
+  }
+
+  .warning-400 {
+    color: $color-warning-400;
+  }
+
+  .warning-500 {
+    color: $color-warning-500;
+  }
+
+  .warning-700 {
+    color: $color-warning-700;
+  }
+
+  .warning-900 {
+    color: $color-warning-900;
+  }
+
+  .error-400 {
+    color: $color-error-400;
+  }
+
+  .error-500 {
+    color: $color-error-500;
+  }
+
+  .error-700 {
+    color: $color-error-700;
+  }
+
+  .error-900 {
+    color: $color-error-900;
+  }
+
+  .info-400 {
+    color: $color-info-400;
+  }
+
+  .info-500 {
+    color: $color-info-500;
+  }
+
+  .info-700 {
+    color: $color-info-700;
+  }
+
+  .info-900 {
+    color: $color-info-900;
+  }
+
+  /* --- brand-colors --- */
+
+  .primary {
+    color: $color-primary;
+  }
+
+  .secondary {
+    color: $color-secondary;
+  }
+
+  /* --- background-colors --- */
+
+  .bg-light {
+    color: $color-bg-light;
+    background-color: $color-neutral-200;
+  }
+
+  .bg-medium {
+    color: $color-bg-medium;
+  }
+
+  .bg-semidark {
+    color: $color-bg-semidark;
+  }
+
+  .bg-dark {
+    color: $color-bg-dark;
+  }
+
+  /* --- text-colors --- */
+
+  .text-light {
+    color: $color-text-light;
+    background-color: $color-neutral-200;
+  }
+
+  .text-medium {
+    color: $color-text-medium;
+  }
+
+  .text-semidark {
+    color: $color-text-semidark;
+  }
+
+  .text-dark {
+    color: $color-text-dark;
+  }
+
+  .text-link {
     color: $color-text-link;
-    @include inset-square(md);
-    }
+  }
 
-    a:hover {
-      color: $color-text-link-hover;
-    }
+  .text-link-hover {
+    color: $color-text-link-hover;
+  }
+
+  /* --- state-colors --- */
+
+  .state-success {
+    color: $color-state-success;
+  }
+
+  .state-warning {
+    color: $color-state-warning;
+  }
+
+  .state-error {
+    color: $color-state-error;
+  }
+
+  .state-info {
+    color: $color-state-info;
+  }
+
+  /* --- border-colors --- */
+
+  .border-light {
+    color: $color-border-light;
+    background-color: $color-neutral-200;
+  }
+
+   .border-medium {
+    color: $color-border-medium;
+  }
+
+   .border-semidark {
+    color: $color-border-semidark;
+  }
+
+   .border-dark {
+    color: $color-border-dark;
   }
 }

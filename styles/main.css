@@ -104,121 +104,169 @@ button, a, svg {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #ffffff;
+  /* --- brand-colors --- */
+  /* --- neutral-colors --- */
+  /* --- state-colors --- */
+  /* --- brand-colors --- */
+  /* --- background-colors --- */
+  /* --- text-colors --- */
+  /* --- state-colors --- */
+  /* --- border-colors --- */
 }
-.page-colors h1, .page-colors h2 {
-  padding: 16px 16px 16px 16px;
-}
-.page-colors .brand_colors {
-  text-align: center;
-  padding: 16px 16px 16px 16px;
-}
-.page-colors .brand_colors .color-primary {
+.page-colors h1 {
   color: #0582ca;
-  border: 1px solid #ebebeb;
 }
-.page-colors .brand_colors .color-secondary {
+.page-colors p {
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+.page-colors .primary-400 {
+  color: #00a6fb;
+}
+.page-colors .primary-500 {
+  color: #0582ca;
+}
+.page-colors .primary-700 {
+  color: #006494;
+}
+.page-colors .primary-900 {
+  color: #003554;
+}
+.page-colors .secondary-400 {
+  color: #90a955;
+}
+.page-colors .secondary-500 {
   color: #4f772d;
-  background-color: #181a1f;
 }
-.page-colors .background_colors {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: stretch;
-  width: 200px;
-  padding: 16px 16px 16px 16px;
+.page-colors .secondary-700 {
+  color: #31572c;
 }
-.page-colors .background_colors .color-bg {
-  text-align: center;
-  height: 100px;
+.page-colors .secondary-900 {
+  color: #132a13;
 }
-.page-colors .background_colors .color-bg-light {
-  background-color: #ffffff;
-  border: 1px solid #ebebeb;
-}
-.page-colors .background_colors .color-bg-medium {
+.page-colors .neutral-100 {
+  color: #ffffff;
   background-color: #ebebeb;
-  color: #181a1f;
 }
-.page-colors .background_colors .color-bg-semidark {
-  background-color: #dddddd;
-  color: #ffffff;
-}
-.page-colors .background_colors .color-bg-dark {
-  background-color: #181a1f;
+.page-colors .neutral-200 {
   color: #ebebeb;
 }
-.page-colors .text_colors {
-  padding: 16px 16px 16px 16px;
-}
-.page-colors .text_colors .color-text-light {
-  color: #ffffff;
-  background-color: #181a1f;
-}
-.page-colors .text_colors .color-text-medium {
-  color: #ebebeb;
-}
-.page-colors .text_colors .color-text-semidark {
+.page-colors .neutral-800 {
   color: #dddddd;
 }
-.page-colors .text_colors .color-text-dark {
+.page-colors .neutral-900 {
   color: #181a1f;
 }
-.page-colors .text_colors .color-text-link {
-  color: #00a6fb;
-}
-.page-colors .text_colors .color-text-link-hover {
-  color: #006494;
-}
-.page-colors .state_colors {
-  padding: 16px 16px 16px 16px;
-}
-.page-colors .state_colors .color-state-success {
+.page-colors .success-400 {
   color: #5dbf6e;
 }
-.page-colors .state_colors .color-state-warning {
+.page-colors .success-500 {
+  color: #4caf50;
+}
+.page-colors .success-700 {
+  color: #388e3c;
+}
+.page-colors .success-900 {
+  color: #2c6b2f;
+}
+.page-colors .warning-400 {
   color: #ffcc66;
 }
-.page-colors .state_colors .color-state-error {
+.page-colors .warning-500 {
+  color: #ffb84d;
+}
+.page-colors .warning-700 {
+  color: #e68a00;
+}
+.page-colors .warning-900 {
+  color: #cc7a00;
+}
+.page-colors .error-400 {
   color: #ff6666;
 }
-.page-colors .state_colors .color-state-info {
+.page-colors .error-500 {
+  color: #ff3333;
+}
+.page-colors .error-700 {
+  color: #e60000;
+}
+.page-colors .error-900 {
+  color: #cc0000;
+}
+.page-colors .info-400 {
   color: #66ccff;
 }
-.page-colors .border_colors {
-  padding: 16px 16px 16px 16px;
+.page-colors .info-500 {
+  color: #33b5e5;
 }
-.page-colors .border_colors .color-border {
-  width: 250px;
-  height: 100px;
-  margin: 1rem;
+.page-colors .info-700 {
+  color: #1f90cc;
 }
-.page-colors .border_colors .color-border-light {
-  border: 1px solid #ffffff;
+.page-colors .info-900 {
+  color: #1a75b3;
 }
-.page-colors .border_colors .color-border-medium {
-  border: 1px solid #ebebeb;
-  background-color: #ffffff;
+.page-colors .primary {
+  color: #0582ca;
 }
-.page-colors .border_colors .color-border-semidark {
-  border: 1px solid #dddddd;
-  background-color: #ffffff;
+.page-colors .secondary {
+  color: #4f772d;
 }
-.page-colors .border_colors .color-border-dark {
-  border: 1px solid #181a1f;
+.page-colors .bg-light {
+  color: #ffffff;
+  background-color: #ebebeb;
 }
-.page-colors .links {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+.page-colors .bg-medium {
+  color: #ebebeb;
 }
-.page-colors .links a {
+.page-colors .bg-semidark {
+  color: #dddddd;
+}
+.page-colors .bg-dark {
+  color: #181a1f;
+}
+.page-colors .text-light {
+  color: #ffffff;
+  background-color: #ebebeb;
+}
+.page-colors .text-medium {
+  color: #ebebeb;
+}
+.page-colors .text-semidark {
+  color: #dddddd;
+}
+.page-colors .text-dark {
+  color: #181a1f;
+}
+.page-colors .text-link {
   color: #00a6fb;
-  padding: 16px 16px 16px 16px;
 }
-.page-colors .links a:hover {
+.page-colors .text-link-hover {
   color: #006494;
+}
+.page-colors .state-success {
+  color: #5dbf6e;
+}
+.page-colors .state-warning {
+  color: #ffcc66;
+}
+.page-colors .state-error {
+  color: #ff6666;
+}
+.page-colors .state-info {
+  color: #66ccff;
+}
+.page-colors .border-light {
+  color: #ffffff;
+  background-color: #ebebeb;
+}
+.page-colors .border-medium {
+  color: #ebebeb;
+}
+.page-colors .border-semidark {
+  color: #dddddd;
+}
+.page-colors .border-dark {
+  color: #181a1f;
 }
 
 .page-typography {
