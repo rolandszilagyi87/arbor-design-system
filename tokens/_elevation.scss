@@ -1,5 +1,34 @@
-/* ========== [ELEVATION LEVELS] ========== */
+/* ========== [ ELEVATION LEVELS ] ========== */
 
+$elevation-level-1: 0 1px 2px rgba(0, 0, 0, 0.12);
+$elevation-level-2: 0 2px 4px rgba(0, 0, 0, 0.16);
+$elevation-level-3: 0 4px 8px rgba(0, 0, 0, 0.20);
+$elevation-level-4: 0 8px 16px rgba(0, 0, 0, 0.24);
+$elevation-flyout:  0 0 12px rgba(0, 0, 0, 0.30);
+
+/* ========== [ INTERACTIVE STATES ] ========== */
+
+$elevation-hover-1: 0 2px 4px rgba(0, 0, 0, 0.14);
+$elevation-hover-2: 0 3px 6px rgba(0, 0, 0, 0.18);
+$elevation-hover-3: 0 5px 10px rgba(0, 0, 0, 0.22);
+
+$elevation-active-1: 0 1px 2px rgba(0, 0, 0, 0.18);
+$elevation-active-2: 0 2px 4px rgba(0, 0, 0, 0.22);
+$elevation-active-3: 0 4px 6px rgba(0, 0, 0, 0.26);
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 $elevation-none: none;
 
 $elevation-sm:
@@ -26,3 +55,4 @@ $elevation-xxl:
   0px 3px 5px rgba(0, 0, 0, 0.14),
   0px 6px 10px rgba(0, 0, 0, 0.12),
   0px 1px 18px rgba(0, 0, 0, 0.20);
+  */

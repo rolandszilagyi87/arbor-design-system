@@ -66,7 +66,36 @@ button, a, svg {
 /*--- SQUISH ---*/
 /*--- STRETCH ---*/
 /* ========== [BOX-SHADOW] ========== */
-/* ========== [ELEVATION LEVELS] ========== */
+/* ========== [ ELEVATION LEVELS ] ========== */
+/* ========== [ INTERACTIVE STATES ] ========== */
+/*
+$elevation-none: none;
+
+$elevation-sm:
+  0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.12),
+  0px 1px 3px rgba(0, 0, 0, 0.20);
+
+$elevation-md:
+  0px 3px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 2px rgba(0, 0, 0, 0.12),
+  0px 1px 5px rgba(0, 0, 0, 0.20);
+
+$elevation-lg:
+  0px 3px 3px rgba(0, 0, 0, 0.14),
+  0px 3px 4px rgba(0, 0, 0, 0.12),
+  0px 1px 8px rgba(0, 0, 0, 0.20);
+
+$elevation-xl:
+  0px 2px 4px rgba(0, 0, 0, 0.14),
+  0px 4px 5px rgba(0, 0, 0, 0.12),
+  0px 1px 10px rgba(0, 0, 0, 0.20);
+
+$elevation-xxl:
+  0px 3px 5px rgba(0, 0, 0, 0.14),
+  0px 6px 10px rgba(0, 0, 0, 0.12),
+  0px 1px 18px rgba(0, 0, 0, 0.20);
+  */
 /* ========== [TOKENS INDEX] ========== */
 /* ========== [BORDER TOKENS] ========== */
 /* --- BORDER-WIDTH --- */
@@ -644,4 +673,93 @@ button, a, svg {
   border-width: 2px;
   border-style: solid;
   border-color: #0582ca;
+}
+
+.page-elevation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* --- elevation-levels --- */
+}
+.page-elevation h1 {
+  color: #0582ca;
+}
+.page-elevation .levels1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 500px;
+  background-color: #ebebeb;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
+  border-radius: 8px;
+  z-index: 10;
+}
+.page-elevation .levels1 .levels2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 400px;
+  background-color: #dddddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  z-index: 20;
+}
+.page-elevation .levels1 .levels2 .levels3 {
+  width: 150px;
+  height: 300px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.24);
+  border-radius: 8px;
+  z-index: 30;
+}
+
+/* --- interactive-states --- */
+.states1 {
+  position: relative;
+  right: 70px;
+  width: 350px;
+  height: 500px;
+  background-color: #ebebeb;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
+  border-radius: 8px;
+  z-index: 10;
+}
+
+.states2 {
+  position: relative;
+  left: 30px;
+  bottom: 270px;
+  width: 400px;
+  height: 200px;
+  background-color: #dddddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  z-index: 20;
+}
+
+.states3 {
+  position: relative;
+  left: 30px;
+  bottom: 570px;
+  width: 250px;
+  height: 200px;
+  background-color: #ffffff;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  z-index: 20;
+}
+
+.states1:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.18);
+}
+
+.states2:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.22);
+}
+
+.states3:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.22);
 }/*# sourceMappingURL=main.css.map */

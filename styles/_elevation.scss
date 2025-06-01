@@ -1,0 +1,101 @@
+@use '../tokens/index' as *;
+
+.page-elevation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    color: $color-primary;
+  }
+
+  /* --- elevation-levels --- */
+
+  .levels1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 350px;
+    height: 500px;
+    background-color: $color-bg-medium;
+    box-shadow: $elevation-level-2;
+    border-radius: $border-radius-md;
+    z-index: 10;
+
+    .levels2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 250px;
+      height: 400px;
+      background-color: $color-bg-semidark;
+      box-shadow: $elevation-level-3;
+      border-radius: $border-radius-md;
+      z-index: 20;
+
+      .levels3 {
+        width: 150px;
+        height: 300px;
+        background-color: $color-bg-light;
+        box-shadow: $elevation-level-4;
+        border-radius: $border-radius-md;
+        z-index: 30;
+      }
+    }
+  }
+}
+
+/* --- interactive-states --- */
+
+.states1 {
+    position: relative;
+    right: 70px;
+
+    width: 350px;
+    height: 500px;
+    background-color: $color-bg-medium;
+    box-shadow: $elevation-level-2;
+    border-radius: $border-radius-md;
+    z-index: 10;
+}
+
+.states2 {
+    position: relative;
+    left: 30px;
+    bottom: 270px;
+
+    width: 400px;
+    height: 200px;
+    background-color: $color-bg-semidark;
+    box-shadow: $elevation-level-3;
+    border-radius: $border-radius-md;
+    z-index: 20;
+}
+
+.states3 {
+    position: relative;
+    left: 30px;
+    bottom: 570px;
+
+    width: 250px;
+    height: 200px;
+    background-color: $color-bg-light;
+    box-shadow: $elevation-flyout;
+    border-radius: $border-radius-md;
+    z-index: 20;
+}
+
+.states1:hover {
+  box-shadow: $elevation-hover-2;
+}
+
+.states2:hover {
+  box-shadow: $elevation-hover-3;
+}
+
+.states3:hover {
+  box-shadow: $elevation-hover-3;
+}
