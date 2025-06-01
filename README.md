@@ -249,3 +249,13 @@ WEBOLDAL Fé PONTJAI:
     - Button
     - Card
     ...
+
+	-----------------------------------
+
+	regi szinek:
+
+	/*--- NEUTRAL COLORS ---*/
+// $color-neutral-100: #ffffff;
+// $color-neutral-200: #f4f4f4;
+// $color-neutral-800: #929292;
+// $color-neutral-900: #181a1f;

@@ -40,15 +40,16 @@ button, a, svg {
 }
 
 /* ========== [TOKENS INDEX] ========== */
-/* ========== [RAW COLORS] ========== */
-/*--- PRIMARY COLORS ---*/
-/*--- SECONDARY COLORS ---*/
-/* ========== [TOKENIZED COLORS] ========== */
-/*--- BRAND COLORS ---*/
-/*--- BACKGROUND COLORS ---*/
-/*--- TEXT COLORS ---*/
-/*--- STATE COLORS ---*/
-/*--- BORDER COLORS ---*/
+/* ========== [ BASE COLORS ] ========== */
+/* --- BRAND COLORS --- */
+/* --- NEUTRAL COLORS --- */
+/* --- STATE COLORS --- */
+/* ========== [ SEMANTIC COLORS ] ========== */
+/* --- BRAND COLORS --- */
+/* --- BACKGROUND COLORS --- */
+/* --- TEXT COLORS --- */
+/* --- STATE COLORS --- */
+/* --- BORDER COLORS --- */
 /* ========== [TYPOGRAPHY] ========== */
 /*--- FONT SCALE ---*/
 /*--- FONT-FAMILY ---*/
@@ -115,11 +116,11 @@ button, a, svg {
   padding: 16px 16px 16px 16px;
 }
 .page-colors .brand_colors .color-primary {
-  color: #3e6ae1;
-  border: 1px solid #f4f4f4;
+  color: #0582ca;
+  border: 1px solid #ebebeb;
 }
 .page-colors .brand_colors .color-secondary {
-  color: #ffffff;
+  color: #4f772d;
   background-color: #181a1f;
 }
 .page-colors .background_colors {
@@ -136,19 +137,19 @@ button, a, svg {
 }
 .page-colors .background_colors .color-bg-light {
   background-color: #ffffff;
-  border: 1px solid #f4f4f4;
+  border: 1px solid #ebebeb;
 }
 .page-colors .background_colors .color-bg-medium {
-  background-color: #f4f4f4;
+  background-color: #ebebeb;
   color: #181a1f;
 }
 .page-colors .background_colors .color-bg-semidark {
-  background-color: #929292;
+  background-color: #dddddd;
   color: #ffffff;
 }
 .page-colors .background_colors .color-bg-dark {
   background-color: #181a1f;
-  color: #f4f4f4;
+  color: #ebebeb;
 }
 .page-colors .text_colors {
   padding: 16px 16px 16px 16px;
@@ -158,19 +159,19 @@ button, a, svg {
   background-color: #181a1f;
 }
 .page-colors .text_colors .color-text-medium {
-  color: #f4f4f4;
+  color: #ebebeb;
 }
 .page-colors .text_colors .color-text-semidark {
-  color: #929292;
+  color: #dddddd;
 }
 .page-colors .text_colors .color-text-dark {
   color: #181a1f;
 }
 .page-colors .text_colors .color-text-link {
-  color: #6b8df0;
+  color: #00a6fb;
 }
 .page-colors .text_colors .color-text-link-hover {
-  color: #253d73;
+  color: #006494;
 }
 .page-colors .state_colors {
   padding: 16px 16px 16px 16px;
@@ -199,11 +200,11 @@ button, a, svg {
   border: 1px solid #ffffff;
 }
 .page-colors .border_colors .color-border-medium {
-  border: 1px solid #f4f4f4;
+  border: 1px solid #ebebeb;
   background-color: #ffffff;
 }
 .page-colors .border_colors .color-border-semidark {
-  border: 1px solid #929292;
+  border: 1px solid #dddddd;
   background-color: #ffffff;
 }
 .page-colors .border_colors .color-border-dark {
@@ -215,11 +216,11 @@ button, a, svg {
   flex-wrap: wrap;
 }
 .page-colors .links a {
-  color: #6b8df0;
+  color: #00a6fb;
   padding: 16px 16px 16px 16px;
 }
 .page-colors .links a:hover {
-  color: #253d73;
+  color: #006494;
 }
 
 .page-typography {
@@ -244,7 +245,7 @@ button, a, svg {
   align-items: center;
 }
 .page-typography .font-primary h3 {
-  color: #3e6ae1;
+  color: #0582ca;
   font-family: "NewYork";
   font-size: 1.728rem;
 }
@@ -253,7 +254,7 @@ button, a, svg {
   align-items: center;
 }
 .page-typography .font-secondary h3 {
-  color: #3e6ae1;
+  color: #0582ca;
   font-family: "SFPro";
   font-size: 1.728rem;
 }
@@ -264,7 +265,7 @@ button, a, svg {
   align-items: center;
 }
 .page-typography .font_sizes .font-size {
-  color: #3e6ae1;
+  color: #0582ca;
   padding: 8px 8px 8px 8px;
 }
 .page-typography .font_sizes .font-size-xs {
@@ -292,7 +293,7 @@ button, a, svg {
   align-items: center;
 }
 .page-typography .font_weights .font-weight {
-  color: #3e6ae1;
+  color: #0582ca;
   padding: 8px 8px 8px 8px;
   font-size: 1.728rem;
 }
@@ -315,10 +316,10 @@ button, a, svg {
   align-items: center;
 }
 .page-typography .font_heights .font-height {
-  color: #3e6ae1;
+  color: #0582ca;
   padding: 8px 8px 8px 8px;
   font-size: 1.728rem;
-  outline: 1px solid #929292;
+  outline: 1px solid #dddddd;
 }
 .page-typography .font_heights .line-height-tight {
   line-height: 1.4;
@@ -338,11 +339,11 @@ button, a, svg {
   flex-wrap: wrap;
 }
 .page-typography .links a {
-  color: #6b8df0;
+  color: #00a6fb;
   padding: 16px 16px 16px 16px;
 }
 .page-typography .links a:hover {
-  color: #253d73;
+  color: #006494;
 }
 
 .page-spacing {
@@ -359,7 +360,7 @@ button, a, svg {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  color: #3e6ae1;
+  color: #0582ca;
 }
 .page-spacing .square-base {
   display: grid;
@@ -451,7 +452,7 @@ button, a, svg {
   display: grid;
   place-items: center;
   height: 200px;
-  border-color: #3e6ae1;
+  border-color: #0582ca;
   border-style: solid;
   margin: 16px 16px 16px 16px;
 }
@@ -479,11 +480,11 @@ button, a, svg {
   flex-wrap: wrap;
 }
 .page-spacing .links a {
-  color: #6b8df0;
+  color: #00a6fb;
   padding: 16px 16px 16px 16px;
 }
 .page-spacing .links a:hover {
-  color: #253d73;
+  color: #006494;
 }
 
 .page-borders {
@@ -499,19 +500,19 @@ button, a, svg {
 }
 .page-borders .border-width1 {
   border-width: 1px;
-  border-color: #929292;
+  border-color: #dddddd;
   border-style: solid;
   border-radius: 0;
 }
 .page-borders .border-width2 {
   border-width: 2px;
-  border-color: #929292;
+  border-color: #dddddd;
   border-style: solid;
   border-radius: 0;
 }
 .page-borders .border-width3 {
   border-width: 4px;
-  border-color: #929292;
+  border-color: #dddddd;
   border-style: solid;
   border-radius: 0;
 }
@@ -522,12 +523,12 @@ button, a, svg {
 }
 .page-borders .border-color2 {
   border-width: 2px;
-  border-color: #f4f4f4;
+  border-color: #ebebeb;
   border-style: solid;
 }
 .page-borders .border-color3 {
   border-width: 2px;
-  border-color: #929292;
+  border-color: #dddddd;
   border-style: solid;
 }
 .page-borders .border-color4 {
@@ -537,30 +538,30 @@ button, a, svg {
 }
 .page-borders .border-radius1 {
   border-width: 2px;
-  border-color: #929292;
+  border-color: #dddddd;
   border-style: solid;
 }
 .page-borders .border-radius2 {
   border-width: 2px;
-  border-color: #929292;
+  border-color: #dddddd;
   border-style: solid;
   border-radius: 4px;
 }
 .page-borders .border-radius3 {
   border-width: 2px;
-  border-color: #929292;
+  border-color: #dddddd;
   border-style: solid;
   border-radius: 8px;
 }
 .page-borders .border-radius4 {
   border-width: 2px;
-  border-color: #929292;
+  border-color: #dddddd;
   border-style: solid;
   border-radius: 16px;
 }
 .page-borders .border-radius5 {
   border-width: 2px;
-  border-color: #929292;
+  border-color: #dddddd;
   border-style: solid;
   border-radius: 1000px;
 }
@@ -576,9 +577,9 @@ button, a, svg {
   flex-wrap: wrap;
 }
 .page-borders .links a {
-  color: #6b8df0;
+  color: #00a6fb;
   padding: 16px 16px 16px 16px;
 }
 .page-borders .links a:hover {
-  color: #253d73;
+  color: #006494;
 }/*# sourceMappingURL=main.css.map */

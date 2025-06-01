@@ -1,17 +1,23 @@
-/* ========== [RAW COLORS] ========== */
+/* ========== [ BASE COLORS ] ========== */
 
-/*--- PRIMARY COLORS ---*/
-$color-primary-400: #6b8df0;
-$color-primary-500: #3e6ae1;
-$color-primary-700: #3457b1;
-$color-primary-900: #253d73;
+/* --- BRAND COLORS --- */
+$color-primary-400: #00a6fb;
+$color-primary-500: #0582ca;
+$color-primary-700: #006494;
+$color-primary-900: #003554;
 
+$color-secondary-400: #90a955;
+$color-secondary-500: #4f772d;
+$color-secondary-700: #31572c;
+$color-secondary-900: #132a13;
+
+/* --- NEUTRAL COLORS --- */
 $color-neutral-100: #ffffff;
-$color-neutral-200: #f4f4f4;
-$color-neutral-800: #929292;
+$color-neutral-200: #ebebeb;
+$color-neutral-800: #dddddd;
 $color-neutral-900: #181a1f;
 
-/*--- SECONDARY COLORS ---*/
+/* --- STATE COLORS --- */
 $color-success-400: #5dbf6e;
 $color-success-500: #4caf50;
 $color-success-700: #388e3c;
@@ -32,33 +38,33 @@ $color-info-500: #33b5e5;
 $color-info-700: #1f90cc;
 $color-info-900: #1a75b3;
 
-/* ========== [TOKENIZED COLORS] ========== */
+/* ========== [ SEMANTIC COLORS ] ========== */
 
-/*--- BRAND COLORS ---*/
+/* --- BRAND COLORS --- */
 $color-primary:     $color-primary-500;
-$color-secondary:   $color-neutral-100;
+$color-secondary:   $color-secondary-500;
 
-/*--- BACKGROUND COLORS ---*/
+/* --- BACKGROUND COLORS --- */
 $color-bg-light:    $color-neutral-100;
 $color-bg-medium:   $color-neutral-200;
 $color-bg-semidark: $color-neutral-800;
 $color-bg-dark:     $color-neutral-900;
 
-/*--- TEXT COLORS ---*/
+/* --- TEXT COLORS --- */
 $color-text-light:      $color-neutral-100;
 $color-text-medium:     $color-neutral-200;
 $color-text-semidark:   $color-neutral-800;
 $color-text-dark:       $color-neutral-900;
 $color-text-link:       $color-primary-400;
-$color-text-link-hover: $color-primary-900;
+$color-text-link-hover: $color-primary-700;
 
-/*--- STATE COLORS ---*/
+/* --- STATE COLORS --- */
 $color-state-success:  $color-success-400;
 $color-state-warning:  $color-warning-400;
 $color-state-error:    $color-error-400;
 $color-state-info:     $color-info-400;
 
-/*--- BORDER COLORS ---*/
+/* --- BORDER COLORS --- */
 $color-border-light:    $color-neutral-100;
 $color-border-medium:   $color-neutral-200;
 $color-border-semidark: $color-neutral-800;
