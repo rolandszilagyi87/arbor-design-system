@@ -39,40 +39,40 @@ button, a, svg {
   text-decoration: none;
 }
 
-/* ========== [TOKENS INDEX] ✅ ========== */
-/* ========== [RAW COLORS] ✅ ========== */
+/* ========== [TOKENS INDEX] ========== */
+/* ========== [RAW COLORS] ========== */
 /*--- PRIMARY COLORS ---*/
 /*--- SECONDARY COLORS ---*/
-/* ========== [TOKENIZED COLORS] ✅ ========== */
+/* ========== [TOKENIZED COLORS] ========== */
 /*--- BRAND COLORS ---*/
 /*--- BACKGROUND COLORS ---*/
 /*--- TEXT COLORS ---*/
 /*--- STATE COLORS ---*/
 /*--- BORDER COLORS ---*/
-/* ========== [TYPOGRAPHY] ✅ ========== */
+/* ========== [TYPOGRAPHY] ========== */
 /*--- FONT SCALE ---*/
 /*--- FONT-FAMILY ---*/
 /*--- FONT-SIZE ---*/
 /*--- FONT-WEIGHT ---*/
 /*--- LINE-HEIGHT ---*/
-/* ========== [SPACING VALUES] ✅ ========== */
-/*--- SPACING SCALE ---*/
-/*--- SPACING TOKENS ---*/
-/* ========== [SPACING CONCEPTIONS] ✅ ========== */
+/* ========== [SPACING VALUES] ========== */
+/*--- SPACE SCALE ---*/
+/*--- SPACE TOKENS ---*/
+/* ========== [SPACING CONCEPTIONS] ========== */
 /*--- SQUARE ---*/
 /*--- STACK ---*/
 /*--- INLINE ---*/
 /*--- SQUISH ---*/
 /*--- STRETCH ---*/
 /* ========== [BOX-SHADOW] ========== */
-/* ========== [ELEVATION VARIABLES] ✅ ========== */
-/* ========== [TOKENS INDEX] ✅ ========== */
-/* ========== [BORDER VALUES] ✅ ========== */
+/* ========== [ELEVATION LEVELS] ========== */
+/* ========== [TOKENS INDEX] ========== */
+/* ========== [BORDER VALUES] ========== */
 /*--- BORDER-WIDTH ---*/
 /*--- BORDER-STYLE ---*/
 /*--- BORDER-COLOR MAP 🗺️ ---*/
 /*--- BORDER-RADIUS MAP 🗺️ ---*/
-/* ========== [UTILITIES INDEX] ✅ ========== */
+/* ========== [UTILITIES INDEX] ========== */
 /* ========== [FONT HELPERS] ✅ ========== */
 /*--- FONT-FACE ---*/
 @font-face {
@@ -88,6 +88,18 @@ button, a, svg {
 /* ========== [BORDER-BASE MIXIN] 🗺️ ✅ ========== */
 /* ========== [BORDER-RADIUS MIXIN] 🗺️ ✅ ========== */
 /* ========== [ELEVATIONS] ✅ ========== */
+/* ========== [LAYOUTS INDEX] ========== */
+/* ========== _containers.scss ========== */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  box-sizing: border-box;
+  outline: 1px solid green;
+}
+
+/* ========== _breakpoints.scss ========== */
 .page-colors {
   display: flex;
   flex-direction: column;
@@ -474,11 +486,89 @@ button, a, svg {
   color: #253d73;
 }
 
-.page-borders h1 {
+.page-borders {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.page-borders .border_base {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.page-borders .border-width1 {
   border-width: 1px;
+  border-color: #929292;
+  border-style: solid;
+  border-radius: 0;
+}
+.page-borders .border-width2 {
+  border-width: 2px;
+  border-color: #929292;
+  border-style: solid;
+  border-radius: 0;
+}
+.page-borders .border-width3 {
+  border-width: 4px;
+  border-color: #929292;
+  border-style: solid;
+  border-radius: 0;
+}
+.page-borders .border-color1 {
+  border-width: 2px;
+  border-color: #ffffff;
+  border-style: solid;
+}
+.page-borders .border-color2 {
+  border-width: 2px;
+  border-color: #f4f4f4;
+  border-style: solid;
+}
+.page-borders .border-color3 {
+  border-width: 2px;
+  border-color: #929292;
+  border-style: solid;
+}
+.page-borders .border-color4 {
+  border-width: 2px;
   border-color: #181a1f;
   border-style: solid;
+}
+.page-borders .border-radius1 {
+  border-width: 2px;
+  border-color: #929292;
+  border-style: solid;
+}
+.page-borders .border-radius2 {
+  border-width: 2px;
+  border-color: #929292;
+  border-style: solid;
   border-radius: 4px;
+}
+.page-borders .border-radius3 {
+  border-width: 2px;
+  border-color: #929292;
+  border-style: solid;
+  border-radius: 8px;
+}
+.page-borders .border-radius4 {
+  border-width: 2px;
+  border-color: #929292;
+  border-style: solid;
+  border-radius: 16px;
+}
+.page-borders .border-radius5 {
+  border-width: 2px;
+  border-color: #929292;
+  border-style: solid;
+  border-radius: 1000px;
+}
+.page-borders .box {
+  width: 7rem;
+  height: 7rem;
+  text-align: center;
+  margin: 8px 8px 8px 8px;
 }
 .page-borders .links {
   display: flex;
@@ -491,78 +581,4 @@ button, a, svg {
 }
 .page-borders .links a:hover {
   color: #253d73;
-}
-
-.page-index {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 85vw;
-  margin: auto;
-}
-.page-index header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 35vh;
-}
-.page-index header h1 {
-  font-family: "NewYork";
-  color: #3e6ae1;
-}
-.page-index header p {
-  font-family: "SFPro";
-  color: #181a1f;
-  background-color: #f4f4f4;
-  border-width: 1px;
-  border-color: #f4f4f4;
-  border-style: solid;
-  padding: 8px 16px;
-  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.14), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 1px 8px rgba(0, 0, 0, 0.2);
-}
-.page-index main {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 85vw;
-  height: 50vh;
-  background-color: #f4f4f4;
-  border-width: 1px;
-  border-color: #f4f4f4;
-  border-style: solid;
-  border-radius: 4px;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.14), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 5px rgba(0, 0, 0, 0.2);
-}
-.page-index main div {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.page-index main a {
-  font-size: 1.44rem;
-  color: #6b8df0;
-  margin: 0 0 4px 0;
-}
-.page-index main a:hover {
-  color: #253d73;
-}
-.page-index footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f4f4f4;
-  margin: 32px 32px 32px 32px;
-  padding: 8px 16px;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
-  border-width: 1px;
-  border-color: #f4f4f4;
-  border-style: solid;
-  border-radius: 4px;
-}
-.page-index footer p {
-  font-family: "SFPro";
-  font-weight: 300;
 }/*# sourceMappingURL=main.css.map */

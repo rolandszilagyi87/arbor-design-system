@@ -1,6 +1,6 @@
 @use './colors' as *;
 
-/* ========== [BORDER VALUES] ✅ ========== */
+/* ========== [BORDER VALUES] ========== */
 
 /*--- BORDER-WIDTH ---*/
 $border-width-none: 0;
@@ -16,7 +16,8 @@ $border-colors: (
   light: $color-border-light,
   medium: $color-border-medium,
   semidark: $color-border-semidark,
-  dark: $color-border-dark
+  dark: $color-border-dark,
+  color-primary: $color-primary
 );
 
 /*--- BORDER-RADIUS MAP 🗺️ ---*/

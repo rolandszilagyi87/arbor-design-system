@@ -1,10 +1,10 @@
-/* ========== [SPACING VALUES] ✅ ========== */
+/* ========== [SPACING VALUES] ========== */
 
-/*--- SPACING SCALE ---*/
+/*--- SPACE SCALE ---*/
 $spacing-scale: 2;
 $base-spacing: 2px;
 
-/*--- SPACING TOKENS ---*/
+/*--- SPACE TOKENS ---*/
 $space-xs: $base-spacing;                         // 2px
 $space-sm: calc($base-spacing * $spacing-scale);  // 4px
 $space-md: calc($space-sm * $spacing-scale);      // 8px
@@ -12,7 +12,7 @@ $space-lg: calc($space-md * $spacing-scale);      // 16px
 $space-xl: calc($space-lg * $spacing-scale);      // 32px
 $space-xxl: calc($space-xl * $spacing-scale);     // 64px
 
-/* ========== [SPACING CONCEPTIONS] ✅ ========== */
+/* ========== [SPACING CONCEPTIONS] ========== */
 
 /*--- SQUARE ---*/
 $space-square-xs: ($space-sm $space-sm $space-sm $space-sm);

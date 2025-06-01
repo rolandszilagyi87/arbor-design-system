@@ -2,14 +2,83 @@
 @use '../utilities/index' as *;
 
 .page-borders {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
+  h1 { 
+  }
 
-  h1 {
-    @include border-thin(dark);
-    @include border-radius(sm);  
+  .border_base {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .border-width1 {
+    @include border-thin(semidark);
+    @include border-radius(none);
+  }
+
+  .border-width2 {
+    @include border-regular(semidark);
+    @include border-radius(none);
+  }
+
+  .border-width3 {
+    @include border-bold(semidark);
+    @include border-radius(none);
   }
 
 
+  .border-color1 {
+    @include border-regular(light);
+  }
+
+  .border-color2 {
+    @include border-regular(medium);
+  }
+
+  .border-color3 {
+    @include border-regular(semidark);
+  }
+
+  .border-color4 {
+    @include border-regular(dark);
+  }
+
+  .border-radius1 {
+    @include border-regular(semidark);
+  }
+
+  .border-radius2 {
+    @include border-regular(semidark);
+    @include border-radius(sm);
+  }
+
+  .border-radius3 {
+    @include border-regular(semidark);
+    @include border-radius(md);
+  }
+
+  .border-radius4 {
+    @include border-regular(semidark);
+    @include border-radius(lg);
+  }
+
+  .border-radius5 {
+    @include border-regular(semidark);
+    @include border-radius(full);
+  }
+
+  .box {
+    width: 7rem;
+    height: 7rem;
+    text-align: center;
+    // outline: 1px solid green;
+    @include margin-square(sm);
+  }
 
   .links {
     display: flex;
