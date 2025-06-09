@@ -51,51 +51,23 @@ button, a, svg {
 /* --- STATE COLORS --- */
 /* --- BORDER COLORS --- */
 /* ========== [TYPOGRAPHY] ========== */
-/*--- FONT SCALE ---*/
-/*--- FONT-FAMILY ---*/
-/*--- FONT-SIZE ---*/
-/*--- FONT-WEIGHT ---*/
-/*--- LINE-HEIGHT ---*/
+/* --- FONT SCALE --- */
+/* --- FONT-FAMILY --- */
+/* --- FONT-SIZE --- */
+/* --- FONT-WEIGHT --- */
+/* --- LINE-HEIGHT --- */
 /* ========== [SPACING VALUES] ========== */
-/*--- SPACE SCALE ---*/
-/*--- SPACE TOKENS ---*/
+/* --- SPACE SCALE --- */
+/* --- SPACE TOKENS --- */
 /* ========== [SPACING CONCEPTIONS] ========== */
-/*--- SQUARE ---*/
-/*--- STACK ---*/
-/*--- INLINE ---*/
-/*--- SQUISH ---*/
-/*--- STRETCH ---*/
+/* --- SQUARE --- */
+/* --- STACK --- */
+/* --- INLINE --- */
+/* --- SQUISH --- */
+/* --- STRETCH --- */
 /* ========== [BOX-SHADOW] ========== */
-/* ========== [ ELEVATION LEVELS ] ========== */
-/* ========== [ INTERACTIVE STATES ] ========== */
-/*
-$elevation-none: none;
-
-$elevation-sm:
-  0px 1px 1px rgba(0, 0, 0, 0.14),
-  0px 2px 1px rgba(0, 0, 0, 0.12),
-  0px 1px 3px rgba(0, 0, 0, 0.20);
-
-$elevation-md:
-  0px 3px 1px rgba(0, 0, 0, 0.14),
-  0px 2px 2px rgba(0, 0, 0, 0.12),
-  0px 1px 5px rgba(0, 0, 0, 0.20);
-
-$elevation-lg:
-  0px 3px 3px rgba(0, 0, 0, 0.14),
-  0px 3px 4px rgba(0, 0, 0, 0.12),
-  0px 1px 8px rgba(0, 0, 0, 0.20);
-
-$elevation-xl:
-  0px 2px 4px rgba(0, 0, 0, 0.14),
-  0px 4px 5px rgba(0, 0, 0, 0.12),
-  0px 1px 10px rgba(0, 0, 0, 0.20);
-
-$elevation-xxl:
-  0px 3px 5px rgba(0, 0, 0, 0.14),
-  0px 6px 10px rgba(0, 0, 0, 0.12),
-  0px 1px 18px rgba(0, 0, 0, 0.20);
-  */
+/* ========== [ELEVATION LEVELS] ========== */
+/* ========== [INTERACTIVE STATES] ========== */
 /* ========== [TOKENS INDEX] ========== */
 /* ========== [BORDER TOKENS] ========== */
 /* --- BORDER-WIDTH --- */
@@ -113,9 +85,13 @@ $elevation-xxl:
   src: url("../assets/fonts/font_SFPro/SF-Pro.ttf");
   font-family: "SFPro";
 }
-/* ========== [SPACING: PADDING] 🗺️ ✅ ========== */
-/* ========== [SPACING: MARGIN] 🗺️ ✅ ========== */
-/* ========== [ELEVATIONS] ✅ ========== */
+/*
+  SPACING (padding, margin)
+  ELEVATION
+*/
+/* ========== [SPACING: PADDING] ========== */
+/* ========== [SPACING: MARGIN] ========== */
+/* ========== [ELEVATIONS] ========== */
 /* ========== [LAYOUTS INDEX] ========== */
 /* ========== _containers.scss ========== */
 .container {

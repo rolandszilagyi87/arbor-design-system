@@ -8,7 +8,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "sass styles/main.scss dist/arbor-design.css --no-source-map --style=compressed"
+    "build": "sass styles/main.scss dist/arbor-design.css --no-source-map --style=compressed",
+    "copy": "cp dist/arbor-design.css docs/arbor-design.css",
+    "release": "npm run build && npm run copy"
   },
   "repository": {
     "type": "git",
