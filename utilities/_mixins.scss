@@ -1,6 +1,11 @@
 @use '../tokens/index' as *;
 
-/* ========== [SPACING: PADDING] 🗺️ ✅ ========== */
+/*
+  SPACING (padding, margin)
+  ELEVATION
+*/
+
+/* ========== [SPACING: PADDING] ========== */
 
 @mixin inset-square($size) {
   padding: map-get((
@@ -60,7 +65,7 @@
 
 // @include inset-square(md);
 
-/* ========== [SPACING: MARGIN] 🗺️ ✅ ========== */
+/* ========== [SPACING: MARGIN] ========== */
 
 @mixin margin-square($size) {
   margin: map-get((
@@ -120,7 +125,7 @@
 
 // @include margin-stack(sm);
 
-/* ========== [ELEVATIONS] ✅ ========== */
+/* ========== [ELEVATIONS] ========== */
 
 @mixin elevation($level) {
   @if $level == 0 {

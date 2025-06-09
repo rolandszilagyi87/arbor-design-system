@@ -1,10 +1,10 @@
 /* ========== [SPACING VALUES] ========== */
 
-/*--- SPACE SCALE ---*/
+/* --- SPACE SCALE --- */
 $spacing-scale: 2;
 $base-spacing: 2px;
 
-/*--- SPACE TOKENS ---*/
+/* --- SPACE TOKENS --- */
 $space-xs: $base-spacing;                         // 2px
 $space-sm: calc($base-spacing * $spacing-scale);  // 4px
 $space-md: calc($space-sm * $spacing-scale);      // 8px
@@ -14,14 +14,14 @@ $space-xxl: calc($space-xl * $spacing-scale);     // 64px
 
 /* ========== [SPACING CONCEPTIONS] ========== */
 
-/*--- SQUARE ---*/
+/* --- SQUARE --- */
 $space-square-xs: ($space-sm $space-sm $space-sm $space-sm);
 $space-square-sm: ($space-md $space-md $space-md $space-md);
 $space-square-md: ($space-lg $space-lg $space-lg $space-lg);
 $space-square-lg: ($space-xl $space-xl $space-xl $space-xl);
 $space-square-xl: ($space-xxl $space-xxl $space-xxl $space-xxl);
 
-/*--- STACK ---*/
+/* --- STACK --- */
 $space-stack-xs: (0 0 $base-spacing 0);
 $space-stack-sm: (0 0 $space-sm 0);
 $space-stack-md: (0 0 $space-md 0 );
@@ -29,7 +29,7 @@ $space-stack-lg: (0 0 $space-lg 0 );
 $space-stack-xl: (0 0 $space-xl 0 );
 $space-stack-xxl: (0 0 $space-xxl 0 );
 
-/*--- INLINE ---*/
+/* --- INLINE --- */
 $space-inline-xs: (0 $base-spacing 0 0);
 $space-inline-sm: (0 $space-sm 0 0);
 $space-inline-md: (0 $space-md 0 0);
@@ -37,12 +37,12 @@ $space-inline-lg: (0 $space-lg 0 0);
 $space-inline-xl: (0 $space-xl 0 0);
 $space-inline-xxl: (0 $space-xl 0 0);
 
-/*--- SQUISH ---*/
+/* --- SQUISH --- */
 $space-squish-sm: ($space-sm calc($space-sm * 2));
 $space-squish-md: ($space-md calc($space-md * 2));
 $space-squish-lg: ($space-lg calc($space-lg * 2));
 
-/*--- STRETCH ---*/
+/* --- STRETCH --- */
 $space-stretch-sm: (calc($space-sm * 1.5) $space-sm);
 $space-stretch-md: (calc($space-md * 1.5) $space-md);
 $space-stretch-lg: (calc($space-lg * 1.5) $space-lg);

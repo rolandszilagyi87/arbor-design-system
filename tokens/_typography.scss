@@ -1,13 +1,13 @@
 /* ========== [TYPOGRAPHY] ========== */
 
-/*--- FONT SCALE ---*/
+/* --- FONT SCALE --- */
 $font-scale: 1.2;
 
-/*--- FONT-FAMILY ---*/
+/* --- FONT-FAMILY --- */
 $font-primary: 'NewYork';
 $font-secondary: 'SFPro';
 
-/*--- FONT-SIZE ---*/
+/* --- FONT-SIZE --- */
 $font-size-sm: 1rem;
 $font-size-xs: calc($font-size-sm / $font-scale);
 $font-size-md: calc($font-size-sm * $font-scale);
@@ -15,13 +15,13 @@ $font-size-lg: calc($font-size-md * $font-scale);
 $font-size-xl: calc($font-size-lg * $font-scale);
 $font-size-xxl: calc($font-size-xl * $font-scale);
 
-/*--- FONT-WEIGHT ---*/
+/* --- FONT-WEIGHT --- */
 $font-weight-regular: 300;
 $font-weight-medium: 500;
 $font-weight-bold: 700;
 $font-weight-heavy: 900;
 
-/*--- LINE-HEIGHT ---*/
+/* --- LINE-HEIGHT --- */
 $line-height-tight: 1.4;
 $line-height-normal: 1.6;
 $line-height-relaxed: 1.8;
