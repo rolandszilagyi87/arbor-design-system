@@ -1,0 +1,229 @@
+@use '../tokens/index' as *;
+
+.page-colors {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    color: $color-primary;
+  }
+
+  p {
+    font-size: 1.6rem;
+    font-weight: 900;
+  }
+
+  /* --- brand-colors --- */
+
+  .primary-400 {
+    color: $color-primary-400;
+  }
+
+  .primary-500 {
+    color: $color-primary-500;
+  }
+
+  .primary-700 {
+    color: $color-primary-700;
+  }
+
+  .primary-900 {
+    color: $color-primary-900;
+  }
+
+  .secondary-400 {
+    color: $color-secondary-400;
+  }
+
+  .secondary-500 {
+    color: $color-secondary-500;
+  }
+
+  .secondary-700 {
+    color: $color-secondary-700;
+  }
+
+  .secondary-900 {
+    color: $color-secondary-900;
+  }
+
+  /* --- neutral-colors --- */
+
+  .neutral-100 {
+    color: $color-neutral-100;
+    background-color: $color-neutral-200;
+  }
+
+  .neutral-200 {
+    color: $color-neutral-200;
+  }
+
+  .neutral-800 {
+    color: $color-neutral-800;
+  }
+
+  .neutral-900 {
+    color: $color-neutral-900;
+  }
+
+  /* --- state-colors --- */
+
+  .success-400 {
+    color: $color-success-400;
+  }
+
+  .success-500 {
+    color: $color-success-500;
+  }
+
+  .success-700 {
+    color: $color-success-700;
+  }
+
+  .success-900 {
+    color: $color-success-900;
+  }
+
+  .warning-400 {
+    color: $color-warning-400;
+  }
+
+  .warning-500 {
+    color: $color-warning-500;
+  }
+
+  .warning-700 {
+    color: $color-warning-700;
+  }
+
+  .warning-900 {
+    color: $color-warning-900;
+  }
+
+  .error-400 {
+    color: $color-error-400;
+  }
+
+  .error-500 {
+    color: $color-error-500;
+  }
+
+  .error-700 {
+    color: $color-error-700;
+  }
+
+  .error-900 {
+    color: $color-error-900;
+  }
+
+  .info-400 {
+    color: $color-info-400;
+  }
+
+  .info-500 {
+    color: $color-info-500;
+  }
+
+  .info-700 {
+    color: $color-info-700;
+  }
+
+  .info-900 {
+    color: $color-info-900;
+  }
+
+  /* --- brand-colors --- */
+
+  .primary {
+    color: $color-primary;
+  }
+
+  .secondary {
+    color: $color-secondary;
+  }
+
+  /* --- background-colors --- */
+
+  .bg-light {
+    color: $color-bg-light;
+    background-color: $color-neutral-200;
+  }
+
+  .bg-medium {
+    color: $color-bg-medium;
+  }
+
+  .bg-semidark {
+    color: $color-bg-semidark;
+  }
+
+  .bg-dark {
+    color: $color-bg-dark;
+  }
+
+  /* --- text-colors --- */
+
+  .text-light {
+    color: $color-text-light;
+    background-color: $color-neutral-200;
+  }
+
+  .text-medium {
+    color: $color-text-medium;
+  }
+
+  .text-semidark {
+    color: $color-text-semidark;
+  }
+
+  .text-dark {
+    color: $color-text-dark;
+  }
+
+  .text-link {
+    color: $color-text-link;
+  }
+
+  .text-link-hover {
+    color: $color-text-link-hover;
+  }
+
+  /* --- state-colors --- */
+
+  .state-success {
+    color: $color-state-success;
+  }
+
+  .state-warning {
+    color: $color-state-warning;
+  }
+
+  .state-error {
+    color: $color-state-error;
+  }
+
+  .state-info {
+    color: $color-state-info;
+  }
+
+  /* --- border-colors --- */
+
+  .border-light {
+    color: $color-border-light;
+    background-color: $color-neutral-200;
+  }
+
+   .border-medium {
+    color: $color-border-medium;
+  }
+
+   .border-semidark {
+    color: $color-border-semidark;
+  }
+
+   .border-dark {
+    color: $color-border-dark;
+  }
+}
