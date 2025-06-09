@@ -1,0 +1,30 @@
+{
+  "name": "arbor-design",
+  "version": "1.0.5",
+  "description": "Reusable design system with SCSS tokens and components",
+  "main": "dist/arbor-design.css",
+  "style": "dist/arbor-design.css",
+  "files": ["dist", "packages", "README.md"],
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass packages/arbor.scss dist/arbor-design.css",
+    "watch": "sass --watch packages/arbor.scss dist/arbor-design.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rolandszilagyi87/my-design-system_v2.git"
+  },
+  "keywords": ["design-system", "scss", "arbor"],
+  "author": "Roland Szilágyi <bobszinkler@icloud.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rolandszilagyi87/my-design-system_v2/issues"
+  },
+  "homepage": "https://github.com/rolandszilagyi87/my-design-system_v2#readme",
+  "devDependencies": {
+    "sass": "^1.89.1"
+  }
+}
