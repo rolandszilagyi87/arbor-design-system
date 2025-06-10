@@ -1,14 +1,18 @@
 {
   "name": "arbor-design",
-  "version": "1.0.5",
+  "version": "1.0.1",
   "description": "Reusable design system with SCSS tokens and components",
   "main": "dist/arbor-design.css",
   "style": "dist/arbor-design.css",
-  "files": ["dist", "packages", "README.md"],
+  "bin": {
+    "arbor-setup": "scripts/setup.js"
+  },
+  "files": ["dist", "packages", "scripts", "README.md"],
   "directories": {
     "doc": "docs"
   },
   "scripts": {
+    "postinstall": "node scripts/setup.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "sass packages/arbor.scss dist/arbor-design.css",
     "watch": "sass --watch packages/arbor.scss dist/arbor-design.css"
