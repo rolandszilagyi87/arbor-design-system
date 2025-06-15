@@ -4,11 +4,11 @@
 
 /*--- FONT-FACE ---*/
 @font-face {
-  src: url("node_modules/arbor-design/packages/assets/fonts/font_NewYork/NewYork.ttf");
-  font-family: $font-primary;
+  font-family: "NewYork";
+  src: url("../../../../dist/fonts/font_NewYork/NewYork.ttf") format("truetype");
 }
 
 @font-face {
-  src: url("node_modules/arbor-design/packages/assets/fonts/font_SFPro/SF-Pro.ttf");
-  font-family: $font-secondary;
+  font-family: "SFPro";
+  src: url("../../../../dist/fonts/font_SFPro/SF-Pro.ttf") format("truetype");
 }
