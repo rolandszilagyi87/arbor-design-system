@@ -1,54 +1,72 @@
 # Arbor Design System
 
-A reusable design system built with SCSS. Provides design tokens, components, and utility classes for consistent UI development.
+A reusable design system built with SCSS.
+Provides design tokens, components, and utility mixins for building consistent, scalable UI.
 
 ---
 
 ## Installation
 
-### Via NPM
-
 ```bash
 npm install arbor-design
 ```
 
-### Via CDN
-
-```html
-<link rel="stylesheet" href="https://unpkg.com/arbor-design-system@latest/dist/arbor-design.css" />
-```
+> 💡 Make sure you also have `sass` installed:
+> ```bash
+> npm install --save-dev sass
+> ```
 
 ---
 
 ## Usage
 
-### In HTML
-
-```html
-<link rel="stylesheet" href="node_modules/arbor-design/dist/arbor-design.css" />
-
-<button class="button-primary">Click me</button>
-```
-
-### In SCSS
+### Option 1 – SCSS (recommended)
 
 ```scss
-@use 'arbor-design/tokens/index' as *;
+@use 'arbor-design/packages/tokens' as *;
+@use 'arbor-design/packages/utilities' as *;
+@use 'arbor-design/packages/base' as *;
+@use 'arbor-design/packages/components' as *;
 
-.my-box {
-  background-color: $color-primary;
-  font-size: $font-size-lg;
+.container {
+  background-color: $color-primary-500;
+  @include elevation-sm;
 }
+```
+
+Build it:
+
+```bash
+npx sass --load-path=node_modules src/styles/main.scss dist/main.css
+```
+
+Include the result in your HTML:
+
+```html
+<link rel="stylesheet" href="dist/main.css" />
 ```
 
 ---
 
-## Structure
+### Option 2 – CDN (prebuilt CSS)
 
-- `tokens/` – SCSS variables (colors, typography, spacing, etc.)
-- `components/` – SCSS-based reusable components (button, card, input)
-- `utilities/` – Mixins, helpers, and utility classes
-- `dist/arbor-design.css` – Compiled CSS ready to use
+If you only need the compiled CSS without SCSS customization:
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/arbor-design-system@latest/dist/arbor-design.css" />
+
+<button class="button-primary">Click me</button>
+```
+
+---
+
+## Project structure
+
+- `tokens/` – SCSS design tokens (colors, spacing, typography, etc.)
+- `utilities/` – Mixins and helper functions
+- `components/` – Reusable SCSS components (e.g. button, card, input)
+- `base/` – Reset and base styles
+- `dist/` – Optional compiled CSS
 
 ---
 

@@ -1,33 +1,24 @@
 {
   "name": "arbor-design",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Reusable design system with SCSS tokens and components",
-  "main": "dist/arbor-design.css",
-  "style": "dist/arbor-design.css",
-  "bin": {
-    "arbor-setup": "scripts/setup.js"
-  },
-  "files": ["dist", "packages", "scripts", "README.md"],
-  "directories": {
-    "doc": "docs"
-  },
+  "main": "packages/arbor.scss",
+  "style": "packages/arbor.scss",
+  "files": ["packages", "README.md"],
   "scripts": {
-    "postinstall": "node scripts/setup.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "sass packages/arbor.scss dist/arbor-design.css",
-    "watch": "sass --watch packages/arbor.scss dist/arbor-design.css"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rolandszilagyi87/my-design-system_v2.git"
+    "url": "https://github.com/rolandszilagyi87/arbor-design-system"
   },
   "keywords": ["design-system", "scss", "arbor"],
   "author": "Roland Szilágyi <bobszinkler@icloud.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rolandszilagyi87/my-design-system_v2/issues"
+    "url": "https://github.com/rolandszilagyi87/arbor-design-system/issues"
   },
-  "homepage": "https://github.com/rolandszilagyi87/my-design-system_v2#readme",
+  "homepage": "https://github.com/rolandszilagyi87/arbor-design-system",
   "devDependencies": {
     "sass": "^1.89.1"
   }

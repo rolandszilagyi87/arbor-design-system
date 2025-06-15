@@ -1,17 +1,25 @@
-# Telepítés
-
-## NPM telepítés
-
-```bash
-npm install arbor-design-system
-```
-
-## CDN használat
-
-<link rel="stylesheet" href="https://unpkg.com/arbor-design-system@latest/dist/arbor-design.css">
-
-## SCSS import (ha tokeneket akarsz használni)
+<!-- ENG -->
+## Installation
 
 ```bash
-@use 'arbor-design-system/tokens/colors';
+npm install arbor-design
 ```
+
+> 💡 Make sure you also have `sass` installed:
+> ```bash
+> npm install --save-dev sass
+> ```
+
+---
+
+<!-- HUN -->
+## Telepítés
+
+```bash
+npm install arbor-design
+```
+
+> 💡 Győződj meg róla, hogy a `sass` is telepítve van:
+> ```bash
+> npm install --save-dev sass
+> ```
